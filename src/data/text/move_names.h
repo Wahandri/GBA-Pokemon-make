@@ -364,4 +364,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_FIERY_DANCE] = _("FIERY DANCE"),
     [MOVE_LAVA_ROAR] = _("LAVA ROAR"),
     [MOVE_SOLAR_ECHO] = _("SOLAR ECHO"),
+    [MOVE_VIAJAR] = _("VIAJAR"),
 };

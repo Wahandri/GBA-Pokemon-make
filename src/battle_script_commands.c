@@ -9011,6 +9011,7 @@ static void Cmd_setsemiinvulnerablebit(void)
     switch (gCurrentMove)
     {
     case MOVE_FLY:
+    case MOVE_VIAJAR:
     case MOVE_BOUNCE:
         gStatuses3[gBattlerAttacker] |= STATUS3_ON_AIR;
         break;
@@ -9030,6 +9031,7 @@ static void Cmd_clearsemiinvulnerablebit(void)
     switch (gCurrentMove)
     {
     case MOVE_FLY:
+    case MOVE_VIAJAR:
     case MOVE_BOUNCE:
         gStatuses3[gBattlerAttacker] &= ~STATUS3_ON_AIR;
         break;

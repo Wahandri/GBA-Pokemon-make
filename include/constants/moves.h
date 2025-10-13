@@ -365,8 +365,9 @@
 #define MOVE_FIERY_DANCE 361
 #define MOVE_LAVA_ROAR 362
 #define MOVE_SOLAR_ECHO 363
+#define MOVE_VIAJAR 364
 
-#define MOVES_COUNT 364
+#define MOVES_COUNT 365
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

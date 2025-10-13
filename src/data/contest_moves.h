@@ -154,6 +154,14 @@ const struct ContestMove gContestMoves[MOVES_COUNT] =
         .comboMoves = {0},
     },
 
+    [MOVE_VIAJAR] =
+    {
+        .effect = CONTEST_EFFECT_AVOID_STARTLE,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .comboStarterId = 0,
+        .comboMoves = {0},
+    },
+
     [MOVE_BIND] =
     {
         .effect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,

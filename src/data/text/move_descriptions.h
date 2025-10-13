@@ -77,6 +77,10 @@ static const u8 sFlyDescription[] = _(
     "Flies up on the first turn,\n"
     "then strikes the next turn.");
 
+static const u8 sViajarDescription[] = _(
+    "Permite viajar entre pueblos corriendo a toda\n"
+    "velocidad por tierra firme.");
+
 static const u8 sBindDescription[] = _(
     "Binds and squeezes the foe\n"
     "for 2 to 5 turns.");
@@ -1819,4 +1823,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_FIERY_DANCE - 1] = sFieryDanceDescription,
     [MOVE_LAVA_ROAR - 1] = sLavaRoarDescription,
     [MOVE_SOLAR_ECHO - 1] = sSolarEchoDescription,
+    [MOVE_VIAJAR - 1] = sViajarDescription,
 };
