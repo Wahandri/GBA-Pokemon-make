@@ -102,19 +102,37 @@ LittlerootTown_ProfessorBirchsLab_OnFrame:
 	map_script_2 VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 4, LittlerootTown_ProfessorBirchsLab_EventScript_ChooseJohtoStarter
 	.2byte 0
 
-@ The starter is technically given prior to this on Route 101 by special ChooseStarter
-@ This is just where the game tells you its yours and lets you nickname it
+@ The starter is now assigned here based on the player
+@ The Poké Ball selection scene is no longer used
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent::
-	lockall
-	bufferleadmonspeciesname STR_VAR_1
-	message LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon
-	waitmessage
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter
-	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
-	end
+        lockall
+        checkplayergender
+        goto_if_eq VAR_RESULT, MALE, LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMale
+        goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterFemale
+        end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterMale::
+        givepokemon SPECIES_GORDA, 5, 0, 0, 0, 0
+        bufferleadmonspeciesname STR_VAR_1
+        message LittlerootTown_ProfessorBirchsLab_Text_WahandriStarter
+        goto LittlerootTown_ProfessorBirchsLab_EventScript_AfterGiveStarter
+        end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterFemale::
+        givepokemon SPECIES_CHARLY, 5, 0, 0, 0, 0
+        bufferleadmonspeciesname STR_VAR_1
+        message LittlerootTown_ProfessorBirchsLab_Text_FranStarter
+        goto LittlerootTown_ProfessorBirchsLab_EventScript_AfterGiveStarter
+        end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_AfterGiveStarter::
+        waitmessage
+        playfanfare MUS_OBTAIN_ITEM
+        waitfanfare
+        msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon, MSGBOX_YESNO
+        goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter
+        goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
+        end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter::
 	setvar VAR_0x8004, 0
@@ -681,24 +699,17 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
 	.string "The PROF enjoys {RIVAL}'s help, too.\n"
 	.string "There's a lot of love there.$"
 
-LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
-	.string "PROF. BIRCH: So, {PLAYER}{KUN}.\p"
-	.string "I've heard so much about you from\n"
-	.string "your father.\p"
-	.string "I've heard that you don't have your\n"
-	.string "own POKéMON yet.\p"
-	.string "But the way you battled earlier,\n"
-	.string "you pulled it off with aplomb!\p"
-	.string "I guess you have your father's blood\n"
-	.string "in your veins after all!\p"
-	.string "Oh, yes. As thanks for rescuing me,\n"
-	.string "I'd like you to have the POKéMON you\l"
-	.string "used earlier.\p"
-	.string "{PLAYER} received the {STR_VAR_1}!$"
+LittlerootTown_ProfessorBirchsLab_Text_WahandriStarter:
+        .string "PROF. BIRCH: ¡Ah, Wahandri!\p"
+        .string "Este es tu compañero, cuídalo bien.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_FranStarter:
+        .string "PROF. BIRCH: ¡Ah, Fran!\p"
+        .string "Este es tu compañero, cuídalo bien.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
-	.string "PROF. BIRCH: While you're at it, why not\n"
-	.string "give a nickname to that {STR_VAR_1}?$"
+        .string "PROF. BIRCH: ¿Quieres ponerle un mote\n"
+        .string "a {STR_VAR_1}?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "PROF. BIRCH: If you work at POKéMON\n"
