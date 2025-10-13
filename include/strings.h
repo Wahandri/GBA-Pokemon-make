@@ -17,6 +17,14 @@ extern const u8 gText_ExpandedPlaceholder_Groudon[];
 extern const u8 gText_ExpandedPlaceholder_Brendan[];
 extern const u8 gText_ExpandedPlaceholder_May[];
 
+extern u8 gRivalName[];
+extern const u8 gText_PlayerNameWahandri[];
+extern const u8 gText_PlayerNameFran[];
+extern const u8 gText_PrimoFran[];
+extern const u8 gText_PrimoWahandri[];
+
+void SetRivalName(const u8 *name);
+
 extern const u8 gText_FromSpace[];
 
 extern const u8 gText_Lv50[];

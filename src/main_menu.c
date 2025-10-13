@@ -189,6 +189,7 @@ static void Task_HandleMainMenuInput(u8);
 static void Task_HandleMainMenuAPressed(u8);
 static void Task_HandleMainMenuBPressed(u8);
 static void Task_NewGameBirchSpeech_Init(u8);
+static void SetPlayerAndRivalNamesByGender(void);
 static void Task_DisplayMainMenuInvalidActionError(u8);
 static void AddBirchSpeechObjects(u8);
 static void Task_NewGameBirchSpeech_WaitToShowBirch(u8);
@@ -641,6 +642,7 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
         switch (gSaveFileStatus)
         {
             case SAVE_STATUS_OK:
+                SetPlayerAndRivalNamesByGender();
                 tMenuType = HAS_SAVED_GAME;
                 if (IsMysteryGiftEnabled())
                     tMenuType++;
@@ -1295,6 +1297,20 @@ static void Task_NewGameBirchSpeech_Init(u8 taskId)
     ShowBg(1);
 }
 
+static void SetPlayerAndRivalNamesByGender(void)
+{
+    if (gSaveBlock2Ptr->playerGender == MALE)
+    {
+        SetRivalName(gText_PrimoFran);
+        StringCopy(gSaveBlock2Ptr->playerName, gText_PlayerNameWahandri);
+    }
+    else
+    {
+        SetRivalName(gText_PrimoWahandri);
+        StringCopy(gSaveBlock2Ptr->playerName, gText_PlayerNameFran);
+    }
+}
+
 static void Task_NewGameBirchSpeech_WaitToShowBirch(u8 taskId)
 {
     u8 spriteId;
@@ -1508,12 +1524,14 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
         case MALE:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->playerGender = gender;
+            SetPlayerAndRivalNamesByGender();
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
             break;
         case FEMALE:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->playerGender = gender;
+            SetPlayerAndRivalNamesByGender();
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
             gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
             break;
@@ -1609,6 +1627,7 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8 taskId)
 static void Task_NewGameBirchSpeech_SoItsPlayerName(u8 taskId)
 {
     NewGameBirchSpeech_ClearWindow(0);
+    SetPlayerAndRivalNamesByGender();
     StringExpandPlaceholders(gStringVar4, gText_Birch_SoItsPlayer);
     AddTextPrinterForMessage(TRUE);
     gTasks[taskId].func = Task_NewGameBirchSpeech_CreateNameYesNo;
