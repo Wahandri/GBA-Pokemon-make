@@ -4643,4 +4643,34 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 2,
     },
+
+    [NATIONAL_DEX_GORDA] =
+    {
+        .categoryName = _("Perro"),
+        .height = 5,
+        .weight = 120,
+        .description = COMPOUND_STRING(
+            "Gorda es un Pokémon leal y protector.\n"
+            "Su cuerpo robusto retiene el calor del magma\n"
+            "interno que usa para defender a su entrenador."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_CHARLY] =
+    {
+        .categoryName = _("Perro"),
+        .height = 6,
+        .weight = 140,
+        .description = COMPOUND_STRING(
+            "Charly es un Pokémon alegre y lleno de energía.\n"
+            "Acumula electricidad mientras corre por los campos,\n"
+            "dejando un rastro de chispas verdes a su paso."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };
