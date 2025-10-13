@@ -70,25 +70,23 @@ PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
 	.string "a battle could be easy or hard.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
-	.string "For example, your TREECKO\n"
-	.string "is a GRASS type.\p"
-	.string "It's strong against the WATER and\n"
-	.string "GROUND types.\p"
-	.string "But, it's weak against FIRE-type\n"
-	.string "POKéMON.$"
+        .string "Por ejemplo, tu GORDA\n"
+        .string "es de tipo FUEGO y TIERRA.\p"
+        .string "Los ataques de FUEGO queman a los\n"
+        .string "tipos BICHO y PLANTA.\p"
+        .string "La TIERRA domina a los ELÉCTRICOS,\n"
+        .string "pero teme al AGUA y al HIELO.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
-	.string "For example, your TORCHIC\n"
-	.string "is a FIRE type.\p"
-	.string "It's strong against the GRASS and\n"
-	.string "BUG types.\p"
-	.string "But, it's weak against WATER-type\n"
-	.string "POKéMON.$"
+        .string "Por ejemplo, tu CHARLY\n"
+        .string "es de tipo ELÉCTRICO y PLANTA.\p"
+        .string "ELÉCTRICO paraliza a los de AGUA,\n"
+        .string "y PLANTA frena a los de TIERRA.\p"
+        .string "Pero cuida de los ataques FUEGO o\n"
+        .string "VENENO, que son peligrosos.$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-	.string "For example, your MUDKIP\n"
-	.string "is a WATER type.\p"
-	.string "It's strong against the FIRE type.\p"
-	.string "But, it's weak against GRASS-type\n"
-	.string "and ELECTRIC-type POKéMON.$"
+        .string "Cada tipo tiene ventajas distintas.\p"
+        .string "Estudia bien a tus rivales para\n"
+        .string "aprovecharlas en combate.$"
 
