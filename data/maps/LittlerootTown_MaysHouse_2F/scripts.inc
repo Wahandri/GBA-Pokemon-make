@@ -337,32 +337,22 @@ RivalsHouse_2F_Text_MayGettingReady:
 	.string "Items ready, and…$"
 
 RivalsHouse_2F_Text_BrendanWhoAreYou:
-	.string "Hey!\n"
-	.string "You…\p"
-	.string "Who are you?\p"
-	.string "Oh, you're {PLAYER}, aren't you?\n"
-	.string "Moved in next door, right?\p"
-	.string "I didn't know that you're a girl.\p"
-	.string "Dad, PROF. BIRCH, said that our new\n"
-	.string "next-door neighbor is a GYM LEADER's\l"
-	.string "kid, so I assumed you'd be a guy.\p"
-	.string "My name's BRENDAN.\n"
-	.string "So, hi, neighbor!\p"
-	.string "Huh? Hey, {PLAYER}, don't you have\n"
-	.string "a POKéMON?\p"
-	.string "Do you want me to go catch you one?\p"
-	.string "Aw, darn, I forgot…\p"
-	.string "I'm supposed to go help my dad catch\n"
-	.string "some wild POKéMON.\p"
-	.string "Some other time, okay?$"
+        .string "¡Eh, primo {PLAYER}!\n"
+        .string "¡Qué sorpresa verte por aquí!\p"
+        .string "Acabo de preparar mi equipo para\n"
+        .string "salir a entrenar POKéMON.\p"
+        .string "Nuestro tío, el PROF. BIRCH, dice\n"
+        .string "que juntos seremos imparables.\p"
+        .string "Voy rumbo a la ruta 103 para seguir\n"
+        .string "practicando. ¡Te veo allí!$"
 
 RivalsHouse_2F_Text_BrendanGettingReady:
 	.string "POKéMON fully restored…\n"
 	.string "Items all packed, and…$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "It's {RIVAL}'s POKé BALL!\p"
-	.string "Better leave it right where it is.$"
+        .string "¡Es la POKé BALL de {RIVAL}!\p"
+        .string "Mejor déjala justo donde está.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 	.string "FRAN: {PLAYER}{KUN}!\p"

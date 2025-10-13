@@ -2,6 +2,21 @@
 #include "strings.h"
 #include "battle_pyramid_bag.h"
 #include "item_menu.h"
+#include "string_util.h"
+
+#define RIVAL_NAME_BUFFER_LENGTH 16
+
+EWRAM_DATA u8 gRivalName[RIVAL_NAME_BUFFER_LENGTH] = _("primo Fran");
+
+const u8 gText_PlayerNameWahandri[] = _("Wahandri");
+const u8 gText_PlayerNameFran[] = _("Fran");
+const u8 gText_PrimoFran[] = _("primo Fran");
+const u8 gText_PrimoWahandri[] = _("primo Wahandri");
+
+void SetRivalName(const u8 *name)
+{
+    StringCopy(gRivalName, name);
+}
 
 ALIGNED(4)
 const u8 gText_ExpandedPlaceholder_Empty[] = _("");
