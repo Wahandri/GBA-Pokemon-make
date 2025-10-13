@@ -1417,6 +1417,42 @@ static const u8 sPsychoBoostDescription[] = _(
     "Allows a full-power attack,\n"
     "but sharply lowers SP. ATK.");
 
+static const u8 sFireFangDescription[] = _(
+    "Bites with fiery fangs that\n"
+    "may leave the foe burned.");
+
+static const u8 sThunderFangDescription[] = _(
+    "Bites with electrified fangs\n"
+    "that may paralyze the foe.");
+
+static const u8 sFlareBlitzDescription[] = _(
+    "The user charges shrouded\n"
+    "in fire. Also hurts the user.");
+
+static const u8 sWildChargeDescription[] = _(
+    "An electrified tackle that\n"
+    "also injures the user.");
+
+static const u8 sEnergyBallDescription[] = _(
+    "Hurls a ball of nature\n"
+    "energy that may lower Sp. Def.");
+
+static const u8 sVoltSwitchDescription[] = _(
+    "Strikes the foe with a quick\n"
+    "jolt of electricity.");
+
+static const u8 sFieryDanceDescription[] = _(
+    "Dances in blazing flames\n"
+    "that may raise Sp. Atk.");
+
+static const u8 sLavaRoarDescription[] = _(
+    "A scorching roar that may\n"
+    "leave the foe with a burn.");
+
+static const u8 sSolarEchoDescription[] = _(
+    "A swift burst of solar\n"
+    "energy that strikes at once.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -1774,4 +1810,13 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_FIRE_FANG - 1] = sFireFangDescription,
+    [MOVE_THUNDER_FANG - 1] = sThunderFangDescription,
+    [MOVE_FLARE_BLITZ - 1] = sFlareBlitzDescription,
+    [MOVE_WILD_CHARGE - 1] = sWildChargeDescription,
+    [MOVE_ENERGY_BALL - 1] = sEnergyBallDescription,
+    [MOVE_VOLT_SWITCH - 1] = sVoltSwitchDescription,
+    [MOVE_FIERY_DANCE - 1] = sFieryDanceDescription,
+    [MOVE_LAVA_ROAR - 1] = sLavaRoarDescription,
+    [MOVE_SOLAR_ECHO - 1] = sSolarEchoDescription,
 };

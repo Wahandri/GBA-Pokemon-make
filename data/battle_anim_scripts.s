@@ -368,9 +368,18 @@ gBattleAnims_Moves::
 	.4byte Move_DRAGON_DANCE
 	.4byte Move_ROCK_BLAST
 	.4byte Move_SHOCK_WAVE
-	.4byte Move_WATER_PULSE
-	.4byte Move_DOOM_DESIRE
-	.4byte Move_PSYCHO_BOOST
+        .4byte Move_WATER_PULSE
+        .4byte Move_DOOM_DESIRE
+        .4byte Move_PSYCHO_BOOST
+        .4byte Move_FIRE_FANG
+        .4byte Move_THUNDER_FANG
+        .4byte Move_FLARE_BLITZ
+        .4byte Move_WILD_CHARGE
+        .4byte Move_ENERGY_BALL
+        .4byte Move_VOLT_SWITCH
+        .4byte Move_FIERY_DANCE
+        .4byte Move_LAVA_ROAR
+        .4byte Move_SOLAR_ECHO
 	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
 
 	.align 2
@@ -9545,16 +9554,44 @@ Move_PSYCHO_BOOST:
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, -8, 1, 24, 1
 	playsewithpan SE_M_LEER, SOUND_PAN_TARGET
 	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
-	call UnsetPsychicBackground
-	end
+        clearmonbg ANIM_ATK_PARTNER
+        blendoff
+        call UnsetPsychicBackground
+        end
+
+Move_FIRE_FANG:
+        goto Move_FIRE_PUNCH
+
+Move_THUNDER_FANG:
+        goto Move_THUNDER_PUNCH
+
+Move_FLARE_BLITZ:
+        goto Move_FLAME_WHEEL
+
+Move_WILD_CHARGE:
+        goto Move_SPARK
+
+Move_ENERGY_BALL:
+        goto Move_GIGA_DRAIN
+
+Move_VOLT_SWITCH:
+        goto Move_THUNDERBOLT
+
+Move_FIERY_DANCE:
+        goto Move_FLAME_WHEEL
+
+Move_LAVA_ROAR:
+        goto Move_FLAMETHROWER
+
+Move_SOLAR_ECHO:
+        loadspritegfx ANIM_TAG_ORBS
+        goto SolarBeamUnleash
 
 Move_KNOCK_OFF:
-	loadspritegfx ANIM_TAG_SLAM_HIT_2
-	loadspritegfx ANIM_TAG_IMPACT
-	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 6
-	delay 4
+        loadspritegfx ANIM_TAG_SLAM_HIT_2
+        loadspritegfx ANIM_TAG_IMPACT
+        createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 6
+        delay 4
 	playsewithpan SE_M_VITAL_THROW, SOUND_PAN_TARGET
 	createsprite gKnockOffStrikeSpriteTemplate, ANIM_TARGET, 2, -16, -16
 	delay 8
