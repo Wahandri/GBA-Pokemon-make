@@ -166,6 +166,14 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
+    [MOVE_VIAJAR] = {
+        { .songId = PHONEME_ID(PH_PRICE_BLEND) },
+        PREV_BARD_SOUND,
+        PREV_BARD_SOUND,
+        NULL_BARD_SOUND,
+        NULL_BARD_SOUND,
+        NULL_BARD_SOUND,
+    },
     [MOVE_BIND] = {
         { .songId = PHONEME_ID(PH_PRICE_SOLO) },
         PREV_BARD_SOUND,

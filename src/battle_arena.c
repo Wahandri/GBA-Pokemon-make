@@ -74,6 +74,7 @@ static const s8 sMindRatings[MOVES_COUNT] =
     [MOVE_GUST] = 1,
     [MOVE_WING_ATTACK] = 1,
     [MOVE_FLY] = 1,
+    [MOVE_VIAJAR] = 1,
     [MOVE_BIND] = 1,
     [MOVE_SLAM] = 1,
     [MOVE_VINE_WHIP] = 1,

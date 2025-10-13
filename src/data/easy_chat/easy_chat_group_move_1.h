@@ -44,6 +44,7 @@ const u16 gEasyChatGroup_Move1[] = {
     MOVE_FLAMETHROWER,
     MOVE_FLATTER,
     MOVE_FLY,
+    MOVE_VIAJAR,
     MOVE_FOCUS_ENERGY,
     MOVE_FOCUS_PUNCH,
     MOVE_FOLLOW_ME,

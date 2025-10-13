@@ -380,6 +380,7 @@ gBattleAnims_Moves::
         .4byte Move_FIERY_DANCE
         .4byte Move_LAVA_ROAR
         .4byte Move_SOLAR_ECHO
+        .4byte Move_FLY
 	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
 
 	.align 2

@@ -131,6 +131,7 @@ enum {
     FIELD_MOVE_MILK_DRINK,
     FIELD_MOVE_SOFT_BOILED,
     FIELD_MOVE_SWEET_SCENT,
+    FIELD_MOVE_VIAJAR,
     FIELD_MOVES_COUNT
 };
 
@@ -478,6 +479,7 @@ static void CursorCb_Toss(u8);
 static void CursorCb_FieldMove(u8);
 static bool8 SetUpFieldMove_Surf(void);
 static bool8 SetUpFieldMove_Fly(void);
+static bool8 SetUpFieldMove_Viajar(void);
 static bool8 SetUpFieldMove_Waterfall(void);
 static bool8 SetUpFieldMove_Dive(void);
 
@@ -3722,7 +3724,16 @@ static void CursorCb_FieldMove(u8 taskId)
     else
     {
         // All field moves before WATERFALL are HMs.
-        if (fieldMove <= FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE01_GET + fieldMove) != TRUE)
+        bool32 requiresBadge = (fieldMove <= FIELD_MOVE_WATERFALL);
+        u8 badgeIndex = fieldMove;
+
+        if (fieldMove == FIELD_MOVE_VIAJAR)
+        {
+            requiresBadge = TRUE;
+            badgeIndex = FIELD_MOVE_FLY;
+        }
+
+        if (requiresBadge && FlagGet(FLAG_BADGE01_GET + badgeIndex) != TRUE)
         {
             DisplayPartyMenuMessage(gText_CantUseUntilNewBadge, TRUE);
             gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
@@ -3750,6 +3761,7 @@ static void CursorCb_FieldMove(u8 taskId)
                 sPartyMenuInternal->data[0] = fieldMove;
                 break;
             case FIELD_MOVE_FLY:
+            case FIELD_MOVE_VIAJAR:
                 gPartyMenu.exitCallback = CB2_OpenFlyMap;
                 Task_ClosePartyMenu(taskId);
                 break;
@@ -3880,6 +3892,11 @@ static bool8 SetUpFieldMove_Fly(void)
         return TRUE;
     else
         return FALSE;
+}
+
+static bool8 SetUpFieldMove_Viajar(void)
+{
+    return SetUpFieldMove_Fly();
 }
 
 void CB2_ReturnToPartyMenuFromFlyMap(void)
