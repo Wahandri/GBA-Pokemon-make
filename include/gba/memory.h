@@ -23,17 +23,41 @@
 #define PLTT_MEM ((vu16 *)PLTT)
 
 // Registros DMA
+#ifndef REG_DMA0SAD
 #define REG_DMA0SAD (*(vu32*)0x040000B0)
+#endif
+#ifndef REG_DMA0DAD
 #define REG_DMA0DAD (*(vu32*)0x040000B4)
+#endif
+#ifndef REG_DMA0CNT
 #define REG_DMA0CNT (*(vu32*)0x040000B8)
+#endif
+#ifndef REG_DMA1SAD
 #define REG_DMA1SAD (*(vu32*)0x040000BC)
+#endif
+#ifndef REG_DMA1DAD
 #define REG_DMA1DAD (*(vu32*)0x040000C0)
+#endif
+#ifndef REG_DMA1CNT
 #define REG_DMA1CNT (*(vu32*)0x040000C4)
+#endif
+#ifndef REG_DMA2SAD
 #define REG_DMA2SAD (*(vu32*)0x040000C8)
+#endif
+#ifndef REG_DMA2DAD
 #define REG_DMA2DAD (*(vu32*)0x040000CC)
+#endif
+#ifndef REG_DMA2CNT
 #define REG_DMA2CNT (*(vu32*)0x040000D0)
+#endif
+#ifndef REG_DMA3SAD
 #define REG_DMA3SAD (*(vu32*)0x040000D4)
+#endif
+#ifndef REG_DMA3DAD
 #define REG_DMA3DAD (*(vu32*)0x040000D8)
+#endif
+#ifndef REG_DMA3CNT
 #define REG_DMA3CNT (*(vu32*)0x040000DC)
+#endif
 
 #endif // GUARD_GBA_MEMORY_H
