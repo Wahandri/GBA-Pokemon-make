@@ -23,6 +23,18 @@ OBJCOPY := $(PREFIX)objcopy
 OBJDUMP := $(PREFIX)objdump
 FIX := tools/gbafix/gbafix.exe
 
+EXE :=
+ifeq ($(OS),Windows_NT)
+EXE := .exe
+endif
+
+PREPROC := tools/preproc/preproc$(EXE)
+GFX := tools/gbagfx/gbagfx$(EXE)
+CHARMAP := charmap.txt
+
+INCBIN_SCRIPT := tools/list_incbin_files.py
+INCBIN_FILES := $(shell python3 $(INCBIN_SCRIPT))
+
 # Directorios
 SRC := src
 ASM := asm
@@ -67,10 +79,80 @@ $(ELF): $(OBJS)
 	$(LD) $(LDFLAGS) -o $@ $^ $(LIBPATH) $(LIBS)
 	@echo "💾 ELF compilado: $@"
 
-$(OBJ)/%.o: $(SRC)/%.c
+$(OBJ)/%.o: $(OBJ)/%.c
 	@mkdir -p $(dir $@)
 	@echo "🧩 Compilando C: $<"
 	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJ)/%.c: $(SRC)/%.c $(INCBIN_FILES) | $(PREPROC)
+	@mkdir -p $(dir $@)
+	@echo "🔄 Preprocesando: $<"
+	$(PREPROC) $< $(CHARMAP) > $@
+
+$(PREPROC):
+	@$(MAKE) -C tools/preproc
+
+$(GFX):
+	@$(MAKE) -C tools/gbagfx
+
+# Generic graphics conversion rules
+%.4bpp: %.png | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.1bpp: %.png | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.8bpp: %.png | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.gbapal: %.pal | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.gbapal: %.png | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.latfont: %.png | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.hwjpnfont: %.png | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.fwjpnfont: %.png | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.4bpp.lz: %.4bpp | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.8bpp.lz: %.8bpp | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.gbapal.lz: %.gbapal | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.bin.lz: %.bin | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.4bpp.rl: %.4bpp | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+%.bin.rl: %.bin | $(GFX)
+	@mkdir -p $(dir $@)
+	$(GFX) $< $@
+
+include graphics_file_rules.mk
 
 $(OBJ)/%.o: %.s
 	@mkdir -p $(dir $@)
