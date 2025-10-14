@@ -9,7 +9,7 @@
            CPU_SET_##bit##BIT | CPU_SET_SRC_FIXED | ((size)/(bit/8) & 0x1FFFFF)); \
 }
 
-#if MODERN
+#if MODERN && (__STDC_VERSION__ >= 201112L)
 #define CPU_FILL(value, dest, size, bit) \
     do \
     { \
@@ -25,7 +25,7 @@
 
 #define CPU_COPY_UNCHECKED(src, dest, size, bit) CpuSet(src, dest, CPU_SET_##bit##BIT | ((size)/(bit/8) & 0x1FFFFF))
 
-#if MODERN
+#if MODERN && (__STDC_VERSION__ >= 201112L)
 #define CPU_COPY(src, dest, size, bit) \
     do \
     { \
@@ -63,7 +63,7 @@
     dmaRegs[2];                                   \
 }
 
-#if MODERN
+#if MODERN && (__STDC_VERSION__ >= 201112L)
 // NOTE: Assumes 16-bit DMAs.
 #define DmaSet(dmaNum, src, dest, control) \
     do \
@@ -87,7 +87,7 @@
          | ((size)/(bit/8)));                                                                 \
 }
 
-#if MODERN
+#if MODERN && (__STDC_VERSION__ >= 201112L)
 #define DMA_FILL(dmaNum, value, dest, size, bit) \
     do \
     { \
@@ -113,7 +113,7 @@
     DmaFill##bit(dmaNum, 0, _dest, _size);  \
 }
 
-#if MODERN
+#if MODERN && (__STDC_VERSION__ >= 201112L)
 #define DMA_CLEAR(dmaNum, dest, size, bit) \
     do \
     { \
@@ -134,7 +134,7 @@
            (DMA_ENABLE | DMA_START_NOW | DMA_##bit##BIT | DMA_SRC_INC | DMA_DEST_INC) << 16 \
          | ((size)/(bit/8)))
 
-#if MODERN
+#if MODERN && (__STDC_VERSION__ >= 201112L)
 #define DMA_COPY(dmaNum, src, dest, size, bit) \
     do \
     { \
