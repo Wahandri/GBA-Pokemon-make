@@ -1,12 +1,17 @@
 #ifndef GUARD_GBA_GBA_H
 #define GUARD_GBA_GBA_H
 
+// ======= GBA Wahandri Fix =======
+// Agrega tipos y estructuras faltantes cuando se compila con GCC moderno
+#include "gba/types.h"
+#include "gba/oam.h"
+#include "gba/macro.h"
+#include "gba/memory.h"
+#include "gba/syscall.h"
+// ======= Fin del fix =======
 #include "gba/defines.h"
 #include "gba/io_reg.h"
-#include "gba/types.h"
 #include "gba/multiboot.h"
-#include "gba/syscall.h"
-#include "gba/macro.h"
 #include "gba/isagbprint.h"
 
 #endif // GUARD_GBA_GBA_H
