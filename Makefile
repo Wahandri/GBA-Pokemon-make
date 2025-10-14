@@ -23,6 +23,14 @@ OBJCOPY := $(PREFIX)objcopy
 OBJDUMP := $(PREFIX)objdump
 FIX := tools/gbafix/gbafix.exe
 
+EXE :=
+ifeq ($(OS),Windows_NT)
+EXE := .exe
+endif
+
+PREPROC := tools/preproc/preproc$(EXE)
+CHARMAP := charmap.txt
+
 # Directorios
 SRC := src
 ASM := asm
@@ -67,10 +75,18 @@ $(ELF): $(OBJS)
 	$(LD) $(LDFLAGS) -o $@ $^ $(LIBPATH) $(LIBS)
 	@echo "💾 ELF compilado: $@"
 
-$(OBJ)/%.o: $(SRC)/%.c
+$(OBJ)/%.o: $(OBJ)/%.c
 	@mkdir -p $(dir $@)
 	@echo "🧩 Compilando C: $<"
 	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJ)/%.c: $(SRC)/%.c | $(PREPROC)
+	@mkdir -p $(dir $@)
+	@echo "🔄 Preprocesando: $<"
+	$(PREPROC) $< $(CHARMAP) > $@
+
+$(PREPROC):
+	@$(MAKE) -C tools/preproc
 
 $(OBJ)/%.o: %.s
 	@mkdir -p $(dir $@)
