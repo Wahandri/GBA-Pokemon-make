@@ -274,7 +274,7 @@ LavaridgeTown_EventScript_HerbShopSign::
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
-	.string "AURA: ¡{PLAYER}{KUN}, cuánto tiempo!\p"
+	.string "Fran: ¡{PLAYER}{KUN}, cuánto tiempo!\p"
 	.string "¡Anda! Mientras yo estaba en los baños\n"
 	.string "termales, tú has ganado la MEDALLA\l"
 	.string "del GIMNASIO de LAVACALDA.\p"
@@ -284,7 +284,7 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "Creo que te mereces esto…$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
-	.string "AURA: Con estas GAFAS AISLANTES,\n"
+	.string "Fran: Con estas GAFAS AISLANTES,\n"
 	.string "no tendrás problemas para atravesar el\l"
 	.string "desierto que hay cerca de la RUTA 111.\p"
 	.string "Pero hay que ver, {PLAYER}{KUN}…\n"
@@ -296,7 +296,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "¡Nos vemos!$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "BRUNO: ¡{PLAYER}! ¡Ya hace un tiempo\n"
+	.string "Wahandri: ¡{PLAYER}! ¡Ya hace un tiempo\n"
 	.string "que no nos vemos! ¿Qué tal te va?\p"
 	.string "Ajá…\n"
 	.string "¡Qué buena colección de MEDALLAS!\p"
@@ -304,7 +304,7 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 	.string "Te voy a dar esto…$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "BRUNO: Póntelas si piensas acercarte\n"
+	.string "Wahandri: Póntelas si piensas acercarte\n"
 	.string "al desierto que hay por la RUTA 111.\p"
 	.string "Algunos POKéMON viven exclusivamente\n"
 	.string "en el desierto. Búscalos.\p"

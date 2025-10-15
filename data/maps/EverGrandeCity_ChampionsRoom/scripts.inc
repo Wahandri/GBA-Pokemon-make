@@ -268,23 +268,23 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "de proclamarte…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
-	.string "AURA: ¡{PLAYER}{KUN}!\p"
+	.string "Fran: ¡{PLAYER}{KUN}!\p"
 	.string "Te voy a dar un consejo antes de que\n"
 	.string "te enfrentes al CAMPEÓN, ¿te parece?$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
-	.string "AURA: ¿Eh? ¿Qué ha pasado? ¿Qué?\p"
+	.string "Fran: ¿Eh? ¿Qué ha pasado? ¿Qué?\p"
 	.string "{PLAYER}{KUN}…\n"
 	.string "¿Entonces ya está?\l"
 	.string "¿Lo has logrado?$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
-	.string "BRUNO: ¡{PLAYER}!\p"
+	.string "Wahandri: ¡{PLAYER}!\p"
 	.string "¿Quieres que te dé algún consejo\n"
 	.string "antes de enfrentarte al CAMPEÓN?$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
-	.string "BRUNO: {PLAYER}…\p"
+	.string "Wahandri: {PLAYER}…\p"
 	.string "Pero… ¿me estás diciendo…?\n"
 	.string "¿Que has vencido al CAMPEÓN?$"
 
@@ -323,14 +323,14 @@ EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
 	.string "con el PROF. ABEDUL.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "AURA: ¿Y por qué?\p"
+	.string "Fran: ¿Y por qué?\p"
 	.string "Brrrrr…\p"
 	.string "Bueno, vale, las reglas son las reglas…\p"
 	.string "¡{PLAYER}{KUN}!\n"
 	.string "¡Felicidades de corazón!$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
-	.string "BRUNO: Pero yo quiero entrar…\p"
+	.string "Wahandri: Pero yo quiero entrar…\p"
 	.string "En fin, si son las reglas…\p"
 	.string "¡{PLAYER}, adelante!\n"
 	.string "¡Mi más sincera enhorabuena!$"

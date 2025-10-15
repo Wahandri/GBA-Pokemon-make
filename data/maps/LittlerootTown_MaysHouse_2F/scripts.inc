@@ -315,7 +315,7 @@ RivalsHouse_2F_Text_MayWhoAreYou:
 	.string "Ya…\p"
 	.string "Eres {PLAYER}{KUN}.\n"
 	.string "Y te acabas de mudar.\p"
-	.string "Mmm… Yo me llamo AURA.\n"
+	.string "Mmm… Yo me llamo Fran.\n"
 	.string "¡Encantada!\p"
 	.string "Yo…\n"
 	.string "sueño con hacerme amiga de miles\l"
@@ -345,7 +345,7 @@ RivalsHouse_2F_Text_BrendanWhoAreYou:
 	.string "Y mi padre, el PROF. ABEDUL,\n"
 	.string "me ha dicho que tu padre es un\l"
 	.string "LÍDER de GIMNASIO, ¿cierto?\p"
-	.string "Yo me llamo BRUNO.\n"
+	.string "Yo me llamo Wahandri.\n"
 	.string "¡Hola, vecina!\p"
 	.string "¿Y eso? {PLAYER}, ¿no tienes\n"
 	.string "ningún POKéMON?\p"
@@ -364,7 +364,7 @@ RivalsHouse_2F_Text_ItsRivalsPokeBall:
 	.string "Será mejor que la deje donde está.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "AURA: ¡{PLAYER}{KUN}!\p"
+	.string "Fran: ¡{PLAYER}{KUN}!\p"
 	.string "Estaba mirando mi POKéDEX.\p"
 	.string "Todavía hay un montón de POKéMON\n"
 	.string "que no he atrapado…\p"
@@ -374,13 +374,13 @@ RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 	.string "POKéMON la próxima vez?$"
 
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
-	.string "AURA: ¿Adónde debería ir a atrapar\n"
+	.string "Fran: ¿Adónde debería ir a atrapar\n"
 	.string "nuevos POKéMON la próxima vez?\p"
 	.string "Sería divertido si nos encontráramos,\n"
 	.string "¿verdad, {PLAYER}{KUN}?$"
 
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
-	.string "BRUNO: Anda, hola, {PLAYER}.\p"
+	.string "Wahandri: Anda, hola, {PLAYER}.\p"
 	.string "Estaba mirando mi POKéDEX.\p"
 	.string "Todavía hay un montón de POKéMON\n"
 	.string "que debo atrapar, ya lo sé,\l"
@@ -389,7 +389,7 @@ RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
 	.string "ganas de salir de viaje otra vez…$"
 
 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
-	.string "BRUNO: No logro decidir a qué lugar\n"
+	.string "Wahandri: No logro decidir a qué lugar\n"
 	.string "debería ir para cazar POKéMON.\p"
 	.string "Oye, {PLAYER}, si nos vemos mientras\n"
 	.string "estoy atrapando POKéMON, igual\l"

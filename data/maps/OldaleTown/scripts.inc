@@ -352,12 +352,12 @@ OldaleTown_Text_FinishedSketchingFootprints:
 	.string "eran mis propias huellas, snif…$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "AURA: ¡{PLAYER}{KUN}!\n"
+	.string "Fran: ¡{PLAYER}{KUN}!\n"
 	.string "¡Ven aquí, deprisa!\l"
 	.string "¡Vamos al LABORATORIO!$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "BRUNO: Me voy al LABORATORIO\n"
+	.string "Wahandri: Me voy al LABORATORIO\n"
 	.string "de mi padre.\l"
 	.string "{PLAYER}, tú también deberías venir.$"
 

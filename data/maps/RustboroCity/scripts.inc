@@ -1126,7 +1126,7 @@ RustboroCity_Text_PleaseComeWithMe:
 	.string "¡Acompáñame, por favor!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "AURA: ¡Oh, hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Oh, hola, {PLAYER}{KUN}!\p"
 	.string "¡La AGENDA del MÓVIL está\n"
 	.string "activada en tu POKéNAV!\p"
 	.string "¡Vamos a registrarnos para seguir\n"
@@ -1134,11 +1134,11 @@ RustboroCity_Text_MayHiLetsRegister:
 	.string "A ver…$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "Acabas de registrar a AURA\n"
+	.string "Acabas de registrar a Fran\n"
 	.string "en el POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "AURA: Por cierto, me he cruzado con\n"
+	.string "Fran: Por cierto, me he cruzado con\n"
 	.string "el SR. ARENQUE en el BOSQUE PETALIA.\p"
 	.string "Creo que iba a su casita de la costa.\p"
 	.string "¿Cómo llevas la POKéDEX, {PLAYER}{KUN}? \n"
@@ -1147,7 +1147,7 @@ RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "¿nos echamos un combate?$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "AURA: ¡Pero bueno! ¿Acaso no\n"
+	.string "Fran: ¡Pero bueno! ¿Acaso no\n"
 	.string "has estado entrenando tus POKéMON?\p"
 	.string "¿No has atrapado nuevos POKéMON?\n"
 	.string "¿No has estado criando los que tienes?\p"
@@ -1155,11 +1155,11 @@ RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
 	.string "debería hacerlo…$"
 
 RustboroCity_Text_MayWantToBattle:
-	.string "AURA: Bueno, ¿qué te parece?\n"
+	.string "Fran: Bueno, ¿qué te parece?\n"
 	.string "¿Nos echamos un combate?$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "AURA: No tienes mucha experiencia,\n"
+	.string "Fran: No tienes mucha experiencia,\n"
 	.string "{PLAYER}{KUN}. ¡No puedo perder!$"
 
 RustboroCity_Text_MayDefeat:
@@ -1167,14 +1167,14 @@ RustboroCity_Text_MayDefeat:
 	.string "¡Eres mejor de lo que esperaba!$"
 
 RustboroCity_Text_MayMrBrineyHint:
-	.string "AURA: Oh, por cierto, me acabo de\n"
+	.string "Fran: Oh, por cierto, me acabo de\n"
 	.string "cruzar con el SR. ARENQUE…\p"
 	.string "Acabas de llegar, {PLAYER}{KUN}, y puede\n"
 	.string "que no lo sepas, pero el SR. ARENQUE\l"
 	.string "era un lobo de mar muy respetado.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "BRUNO: ¡Eh, hola, {PLAYER}!\p"
+	.string "Wahandri: ¡Eh, hola, {PLAYER}!\p"
 	.string "¡Veo que han activado la AGENDA\n"
 	.string "del MÓVIL de tu POKéNAV! ¡Genial!\p"
 	.string "¡Vamos a registrarnos para estar\n"
@@ -1182,11 +1182,11 @@ RustboroCity_Text_BrendanHiLetsRegister:
 	.string "Ajá…$"
 
 RustboroCity_Text_RegisteredBrendan:
-	.string "Acabas de registrar a BRUNO\n"
+	.string "Acabas de registrar a Wahandri\n"
 	.string "en el POKéNAV.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "BRUNO: Por cierto, {PLAYER}, he visto\n"
+	.string "Wahandri: Por cierto, {PLAYER}, he visto\n"
 	.string "al SR. ARENQUE en el BOSQUE PETALIA.\p"
 	.string "Seguro que iba a su casita de la costa.\p"
 	.string "¿Cómo está tu POKéDEX?\n"
@@ -1196,15 +1196,15 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 	.string "para ver cuánto has mejorado?$"
 
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "BRUNO: ¿Qué problema hay?\n"
+	.string "Wahandri: ¿Qué problema hay?\n"
 	.string "¿No confías en tus POKéMON?$"
 
 RustboroCity_Text_BrendanWantToBattle:
-	.string "BRUNO: ¿Qué pasa?\n"
+	.string "Wahandri: ¿Qué pasa?\n"
 	.string "¿Quieres luchar conmigo?$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
-	.string "BRUNO: Sé que acabas de empezar\n"
+	.string "Wahandri: Sé que acabas de empezar\n"
 	.string "a entrenar, pero no te lo pondré fácil.$"
 
 RustboroCity_Text_BrendanDefeat:
@@ -1212,7 +1212,7 @@ RustboroCity_Text_BrendanDefeat:
 	.string "No se te da nada mal.$"
 
 RustboroCity_Text_BrendanMrBrineyHint:
-	.string "BRUNO: Por cierto, ¿conoces al SR.\n"
+	.string "Wahandri: Por cierto, ¿conoces al SR.\n"
 	.string "ARENQUE? ¿El señor con el que\l"
 	.string "acabo de cruzarme?\p"
 	.string "Seguro que no lo sabes, porque acabas\n"

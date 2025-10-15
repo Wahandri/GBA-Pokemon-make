@@ -410,7 +410,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "AURA: ¡Mira por donde!\n"
+	.string "Fran: ¡Mira por donde!\n"
 	.string "{PLAYER}{KUN}, ¿también estás de compras?\p"
 	.string "He comprado un montón de MUÑECOS\n"
 	.string "y PÓSTERS.\p"
@@ -423,17 +423,17 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "mostrarme tus POKéMON, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "AURA: ¡Pero bueno! {PLAYER}{KUN}, ¿acaso\n"
+	.string "Fran: ¡Pero bueno! {PLAYER}{KUN}, ¿acaso\n"
 	.string "no has estado entrenando tus POKéMON?\p"
 	.string "Pues todo ENTRENADOR que se precie\n"
 	.string "debería hacerlo…$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "AURA: Venga, lucha conmigo, que quiero\n"
+	.string "Fran: Venga, lucha conmigo, que quiero\n"
 	.string "ver cómo entrenas tus POKéMON…$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "AURA: Los POKéMON que he entrenado\n"
+	.string "Fran: Los POKéMON que he entrenado\n"
 	.string "dan mil vueltas a los tuyos, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayDefeat:
@@ -444,7 +444,7 @@ LilycoveCity_Text_MayDefeat:
 	.string "a ser así de fuerte, {PLAYER}{KUN}?$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "AURA: Creo que voy a volver pronto\n"
+	.string "Fran: Creo que voy a volver pronto\n"
 	.string "a VILLA RAÍZ.\p"
 	.string "He atrapado un buen grupo de POKéMON\n"
 	.string "y mi POKéDEX está bastante completa.\l"
@@ -478,7 +478,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "¡Nos vemos!$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
-	.string "BRUNO: Eh, hola, {PLAYER}.\p"
+	.string "Wahandri: Eh, hola, {PLAYER}.\p"
 	.string "Le estoy haciendo un recado a mi\n"
 	.string "padre, no estoy comprando MUÑECOS.\p"
 	.string "Pero ya llevo mucho tiempo dando\n"
@@ -487,15 +487,15 @@ LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "quién entrena POKéMON mejor?$"
 
 LilycoveCity_Text_BrendanNoConfidence:
-	.string "BRUNO: ¿Qué te pasa?\n"
+	.string "Wahandri: ¿Qué te pasa?\n"
 	.string "¿Sabes que vas a perder?$"
 
 LilycoveCity_Text_BrendanBattleMe:
-	.string "BRUNO: ¿Quieres luchar para ver\n"
+	.string "Wahandri: ¿Quieres luchar para ver\n"
 	.string "quién entrena POKéMON mejor?$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:
-	.string "BRUNO: Je, je, que sepas que no\n"
+	.string "Wahandri: Je, je, que sepas que no\n"
 	.string "tengo intención de perder.$"
 
 LilycoveCity_Text_BrendanDefeat:
@@ -505,7 +505,7 @@ LilycoveCity_Text_BrendanDefeat:
 	.string "entrenando POKéMON…$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
-	.string "BRUNO: Bueno…\n"
+	.string "Wahandri: Bueno…\n"
 	.string "Tengo pensado volver a VILLA RAÍZ.\p"
 	.string "Sabes que estoy ayudando a mi padre\n"
 	.string "a completar su POKéDEX. Ya está\l"

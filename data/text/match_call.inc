@@ -2369,7 +2369,7 @@ MatchCall_Text_Wallace::
 
 MatchCall_Text_MayRayquazaCall:
 	.string "¡Bip!\p"
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\p"
 	.string "¡Hace poco he estado en OROMAR!\p"
 	.string "Allí vi un POKéMON verde y enorme\n"
 	.string "surcando el cielo.\p"
@@ -2381,7 +2381,7 @@ MatchCall_Text_MayRayquazaCall:
 
 MatchCall_Text_BrendanRayquazaCall:
 	.string "¡Bip!\p"
-	.string "BRUNO: ¡Hola, {PLAYER}!\p"
+	.string "Wahandri: ¡Hola, {PLAYER}!\p"
 	.string "¡Hace poco he estado en OROMAR!\p"
 	.string "Allí vi un POKéMON verde y enorme\n"
 	.string "surcando el cielo.\p"
@@ -2391,14 +2391,14 @@ MatchCall_Text_BrendanRayquazaCall:
 	.string "¡Clic!$"
 
 MatchCall_Text_May1::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\p"
 	.string "El SR. ARENQUE se ha retirado\n"
 	.string "de MARINERO, pero a veces lo veo\l"
 	.string "en el mar con su mascota, PEEKO.\p"
 	.string "¡Debe de echarlo mucho de menos!$"
 
 MatchCall_Text_May2::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\p"
 	.string "Sabes que PETALIA y AZULIZA\n"
 	.string "tienen GIMNASIO, ¿verdad?\p"
 	.string "Pero no sé por qué, en el puerto de\n"
@@ -2408,7 +2408,7 @@ MatchCall_Text_May2::
 	.string "para el puesto de LÍDER.$"
 
 MatchCall_Text_May3::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\p"
 	.string "¿Te acuerdas del tipo de CIUDAD\n"
 	.string "FÉRRICA, al que llamaban\l"
 	.string "el CORTADOR?\l"
@@ -2420,20 +2420,20 @@ MatchCall_Text_May3::
 	.string "¡MACHACARROCAS!$"
 
 MatchCall_Text_May4::
-	.string "AURA: ¿{PLAYER}{KUN}?\p"
+	.string "Fran: ¿{PLAYER}{KUN}?\p"
 	.string "TÚNEL FERVERGAL…\n"
 	.string "Le pusieron ese nombre porque une\l"
 	.string "CIUDAD FÉRRICA y VERDEGAL.$"
 
 MatchCall_Text_May5::
-	.string "AURA: {PLAYER}{KUN}, ¿qué tal?\p"
+	.string "Fran: {PLAYER}{KUN}, ¿qué tal?\p"
 	.string "Ahora ando por la RUTA 111.\p"
 	.string "Voy a descansar un poco\n"
 	.string "en la casa de una anciana.\p"
 	.string "Vive justo al norte del desierto.$"
 
 MatchCall_Text_May6::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\p"
 	.string "¿Has oído hablar de la TORRE\n"
 	.string "ESPEJISMO que hay en el desierto?\p"
 	.string "Dicen que, como los espejismos,\n"
@@ -2441,14 +2441,14 @@ MatchCall_Text_May6::
 	.string "Ojalá pueda verla.$"
 
 MatchCall_Text_May7::
-	.string "AURA: ¡{PLAYER}{KUN}, hola!\n"
+	.string "Fran: ¡{PLAYER}{KUN}, hola!\n"
 	.string "Ahora estoy en la RUTA 119.\p"
 	.string "Hay un río enorme y, encima, \n"
 	.string "a veces llueve mucho.\p"
 	.string "¡Me he empapado!$"
 
 MatchCall_Text_May8::
-	.string "AURA: {PLAYER}{KUN}, hola.\p"
+	.string "Fran: {PLAYER}{KUN}, hola.\p"
 	.string "El MONTE PÍRICO es un monumento en\n"
 	.string "recuerdo de los POKéMON que ya no\l"
 	.string "están físicamente entre nosotros.\p"
@@ -2456,7 +2456,7 @@ MatchCall_Text_May8::
 	.string "de POKéMON de tipo FANTASMA!$"
 
 MatchCall_Text_May9::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\p"
 	.string "Estaba pensando en acercarme a\n"
 	.string "los baños termales de LAVACALDA.\p"
 	.string "Pero cerca del DESFILADERO\n"
@@ -2464,14 +2464,14 @@ MatchCall_Text_May9::
 	.string "tipos raros. ¡No te lo recomiendo!$"
 
 MatchCall_Text_May10::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\n"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\n"
 	.string "¿Has oído la última?\p"
 	.string "Dicen que el CAPITÁN BABOR\n"
 	.string "descubrió la CAVERNA ABISAL en una\l"
 	.string "de sus expediciones submarinas.$"
 
 MatchCall_Text_May11::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\n"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\n"
 	.string "¿No te parece fantástico?…\p"
 	.string "Aunque no tengas barco,\n"
 	.string "puedes cruzar el mar usando\l"
@@ -2481,7 +2481,7 @@ MatchCall_Text_May11::
 	.string "permite viajar por el fondo del mar!$"
 
 MatchCall_Text_May12::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\n"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\n"
 	.string "Espero que todo vaya bien.\p"
 	.string "Cuando estuviste en el mar,\n"
 	.string "¿pudiste pasar al lado que estaba\l"
@@ -2492,7 +2492,7 @@ MatchCall_Text_May12::
 	.string "vuelve a la superficie. ¡Es fácil!$"
 
 MatchCall_Text_May13::
-	.string "AURA: ¡Hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}!\p"
 	.string "¿Cómo va eso?\n"
 	.string "¿Estás llenando tu POKéDEX?\p"
 	.string "He oído el rumor de que hay\n"
@@ -2501,7 +2501,7 @@ MatchCall_Text_May13::
 	.string "¡Lo que daría por ver uno!…$"
 
 MatchCall_Text_May14::
-	.string "AURA: ¡{PLAYER}{KUN}!\n"
+	.string "Fran: ¡{PLAYER}{KUN}!\n"
 	.string "¡He oído los rumores que corren!\p"
 	.string "¿De verdad has vencido al LÍDER\n"
 	.string "del GIMNASIO de ARRECÍPOLIS?\p"
@@ -2509,7 +2509,7 @@ MatchCall_Text_May14::
 	.string "te queda poco, ¿no?$"
 
 MatchCall_Text_May15::
-	.string "AURA: ¡Ya no hay ni un solo\n"
+	.string "Fran: ¡Ya no hay ni un solo\n"
 	.string "ENTRENADOR en HOENN que no\l"
 	.string "sepa quién eres, {PLAYER}{KUN}!\p"
 	.string "Cuando le digo a la gente\n"
@@ -2517,14 +2517,14 @@ MatchCall_Text_May15::
 	.string "¡no veas qué cara ponen!$"
 
 MatchCall_Text_Brendan1::
-	.string "BRUNO: ¡Eh, {PLAYER}!\p"
+	.string "Wahandri: ¡Eh, {PLAYER}!\p"
 	.string "El SR. ARENQUE se ha retirado\n"
 	.string "de MARINERO, pero a veces lo veo\l"
 	.string "en el mar con su mascota, PEEKO.\p"
 	.string "¡Debe de echarlo mucho de menos!$"
 
 MatchCall_Text_Brendan2::
-	.string "BRUNO: ¡Eh, {PLAYER}!\p"
+	.string "Wahandri: ¡Eh, {PLAYER}!\p"
 	.string "Sabes que PETALIA y AZULIZA\n"
 	.string "tienen GIMNASIO, ¿verdad?\p"
 	.string "Pero no sé por qué, en el puerto de\n"
@@ -2534,7 +2534,7 @@ MatchCall_Text_Brendan2::
 	.string "para el puesto de LÍDER.$"
 
 MatchCall_Text_Brendan3::
-	.string "BRUNO: ¡Hola, {PLAYER}!\p"
+	.string "Wahandri: ¡Hola, {PLAYER}!\p"
 	.string "¿Te acuerdas del tipo de CIUDAD\n"
 	.string "FÉRRICA, al que llamaban\l"
 	.string "el CORTADOR?\l"
@@ -2546,14 +2546,14 @@ MatchCall_Text_Brendan3::
 	.string "¡MACHACARROCAS!$"
 
 MatchCall_Text_Brendan4::
-	.string "BRUNO: Esa voz… ¿{PLAYER}?\p"
+	.string "Wahandri: Esa voz… ¿{PLAYER}?\p"
 	.string "El nombre de TÚNEL FERVERGAL\n"
 	.string "se lo pusieron porque une\l"
 	.string "CIUDAD FÉRRICA y VERDEGAL.\p"
 	.string "¿Lo sabías?$"
 
 MatchCall_Text_Brendan5::
-	.string "BRUNO: {PLAYER}, ¿qué tal va todo?\p"
+	.string "Wahandri: {PLAYER}, ¿qué tal va todo?\p"
 	.string "Ahora estoy por la RUTA 111.\p"
 	.string "Voy a descansar un poco en\n"
 	.string "la casa de una anciana que\l"
@@ -2561,7 +2561,7 @@ MatchCall_Text_Brendan5::
 	.string "Si pasas por aquí, ven a verla.$"
 
 MatchCall_Text_Brendan6::
-	.string "BRUNO: ¡Eh, {PLAYER}!\p"
+	.string "Wahandri: ¡Eh, {PLAYER}!\p"
 	.string "¿Has oído hablar de la TORRE\n"
 	.string "ESPEJISMO que hay en el desierto?\p"
 	.string "Dicen que, como los espejismos,\n"
@@ -2569,14 +2569,14 @@ MatchCall_Text_Brendan6::
 	.string "¡Ojalá pueda verla!$"
 
 MatchCall_Text_Brendan7::
-	.string "BRUNO: ¿Quién es? Eh, ¿{PLAYER}?\n"
+	.string "Wahandri: ¿Quién es? Eh, ¿{PLAYER}?\n"
 	.string "Ahora estoy en la RUTA 119.\p"
 	.string "Hay un río enorme y, encima, \n"
 	.string "a veces llueve mucho.\p"
 	.string "¡Estoy calado hasta los huesos!$"
 
 MatchCall_Text_Brendan8::
-	.string "BRUNO: ¡{PLAYER}!\p"
+	.string "Wahandri: ¡{PLAYER}!\p"
 	.string "El MONTE PÍRICO es un monumento en\n"
 	.string "recuerdo de los POKéMON que ya no\l"
 	.string "están físicamente entre nosotros.\p"
@@ -2584,7 +2584,7 @@ MatchCall_Text_Brendan8::
 	.string "de POKéMON de tipo FANTASMA!$"
 
 MatchCall_Text_Brendan9::
-	.string "BRUNO: ¿Qué hay, {PLAYER}?\p"
+	.string "Wahandri: ¿Qué hay, {PLAYER}?\p"
 	.string "Iba camino de los baños\n"
 	.string "termales de LAVACALDA.\p"
 	.string "Pero cerca del DESFILADERO\n"
@@ -2594,14 +2594,14 @@ MatchCall_Text_Brendan9::
 	.string "¡Creo que era el EQUIPO MAGMA!$"
 
 MatchCall_Text_Brendan10::
-	.string "BRUNO: ¡Hola, {PLAYER}!\n"
+	.string "Wahandri: ¡Hola, {PLAYER}!\n"
 	.string "¿Has oído las últimas noticias?\p"
 	.string "Dicen que el CAPITÁN BABOR\n"
 	.string "descubrió la CAVERNA ABISAL en una\l"
 	.string "de sus expediciones submarinas.$"
 
 MatchCall_Text_Brendan11::
-	.string "BRUNO: ¡Eh, {PLAYER}!\n"
+	.string "Wahandri: ¡Eh, {PLAYER}!\n"
 	.string "¿No te parece alucinante?…\p"
 	.string "Aunque no tengas barco,\n"
 	.string "puedes cruzar el mar usando\l"
@@ -2611,7 +2611,7 @@ MatchCall_Text_Brendan11::
 	.string "¡Oye, estos POKéMON hacen de todo!$"
 
 MatchCall_Text_Brendan12::
-	.string "BRUNO: ¡Ey, {PLAYER}!\n"
+	.string "Wahandri: ¡Ey, {PLAYER}!\n"
 	.string "¿Qué tal te va?\p"
 	.string "¿Has dado con algún camino que\n"
 	.string "conecte con la zona bloqueada?\p"
@@ -2621,7 +2621,7 @@ MatchCall_Text_Brendan12::
 	.string "a la superficie. ¡Está chupado!$"
 
 MatchCall_Text_Brendan13::
-	.string "BRUNO: ¡Eh, {PLAYER}!\p"
+	.string "Wahandri: ¡Eh, {PLAYER}!\p"
 	.string "¿Cómo va eso?\n"
 	.string "¿Estás llenando tu POKéDEX?\p"
 	.string "He oído el rumor de que hay\n"
@@ -2630,14 +2630,14 @@ MatchCall_Text_Brendan13::
 	.string "¡Lo que daría por ver uno!$"
 
 MatchCall_Text_Brendan14::
-	.string "BRUNO: ¡{PLAYER}!\n"
+	.string "Wahandri: ¡{PLAYER}!\n"
 	.string "¡Me han llegado rumores!\p"
 	.string "¿Has vencido al LÍDER del GIMNASIO\n"
 	.string "de ARRECÍPOLIS? ¡Genial!\p"
 	.string "¡Ya te queda muy poco!$"
 
 MatchCall_Text_Brendan15::
-	.string "BRUNO: ¡Ya no hay ni un solo\n"
+	.string "Wahandri: ¡Ya no hay ni un solo\n"
 	.string "ENTRENADOR en HOENN que\l"
 	.string "no sepa quién eres, {PLAYER}!\p"
 	.string "Cuando le digo a la gente\n"
