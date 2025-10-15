@@ -22,6 +22,7 @@
 #include "main.h"
 
 extern struct BackupMapLayout gBackupMapLayout;
+extern u16 ALIGNED(4) sBackupMapData[MAX_MAP_DATA_SIZE];
 
 u32 MapGridGetMetatileIdAt(int x, int y);
 u32 MapGridGetMetatileBehaviorAt(int x, int y);
@@ -44,7 +45,7 @@ void InitTrainerHillMap(void);
 void InitBattlePyramidMap(bool8 setPlayerPosition);
 void CopyMapTilesetsToVram(struct MapLayout const *mapLayout);
 void LoadMapTilesetPalettes(struct MapLayout const *mapLayout);
-void LoadSecondaryTilesetPalette(struct MapLayout const *mapLayout);
+void LoadSecondaryTilesetPalette(struct MapLayout const *mapLayout, bool8 skipFaded);
 void CopySecondaryTilesetToVramUsingHeap(struct MapLayout const *mapLayout);
 void CopyPrimaryTilesetToVram(struct MapLayout const *mapLayout);
 void CopySecondaryTilesetToVram(struct MapLayout const *mapLayout);

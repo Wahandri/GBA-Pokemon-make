@@ -49,7 +49,7 @@ EWRAM_DATA static u8 sDownArrowCounterAndYCoordIdx[8] = {};
 EWRAM_DATA bool8 gGiftIsFromEReader = FALSE;
 
 static const u16 sTextboxBorder_Pal[] = INCBIN_U16("graphics/interface/mystery_gift_textbox_border.gbapal");
-static const u32 sTextboxBorder_Gfx[] = INCBIN_U32("graphics/interface/mystery_gift_textbox_border.4bpp.lz");
+static const u32 sTextboxBorder_Gfx[] = INCBIN_U32("graphics/interface/mystery_gift_textbox_border.4bpp.smol");
 
 struct MysteryGiftTaskData
 {
@@ -897,7 +897,7 @@ static bool32 SaveOnMysteryGiftMenu(u8 *state)
     return FALSE;
 }
 
-static const u8 * GetClientResultMessage(bool32 *successMsg, bool8 isWonderNews, bool8 sourceIsFriend, u32 msgId)
+static const u8 *GetClientResultMessage(bool32 *successMsg, bool8 isWonderNews, bool8 sourceIsFriend, u32 msgId)
 {
     const u8 *msg = NULL;
     *successMsg = FALSE;
@@ -996,7 +996,7 @@ static bool32 PrintSuccessMessage(u8 *state, const u8 *msg, u16 *timer)
     return FALSE;
 }
 
-static const u8 * GetServerResultMessage(bool32 *wonderSuccess, bool8 sourceIsFriend, u32 msgId)
+static const u8 *GetServerResultMessage(bool32 *wonderSuccess, bool8 sourceIsFriend, u32 msgId)
 {
     const u8 *result = gText_CommunicationError;
     *wonderSuccess = FALSE;

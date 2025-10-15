@@ -47,7 +47,6 @@ struct RedArrowCursor
 
 // this file's functions
 static u8 ListMenuInitInternal(struct ListMenuTemplate *listMenuTemplate, u16 scrollOffset, u16 selectedRow);
-static bool8 ListMenuChangeSelection(struct ListMenu *list, bool8 updateCursorAndCallCallback, u8 count, bool8 movingDown);
 static void ListMenuPrintEntries(struct ListMenu *list, u16 startIndex, u16 yOffset, u16 count);
 static void ListMenuDrawCursor(struct ListMenu *list);
 static void ListMenuCallSelectionChangedCallback(struct ListMenu *list, u8 onInit);
@@ -283,9 +282,9 @@ static const struct SpriteTemplate sSpriteTemplate_RedArrowCursor =
 };
 
 static const u16 sRedInterface_Pal[]    = INCBIN_U16("graphics/interface/red.gbapal"); // Shared by all of the below gfx
-static const u32 sScrollIndicator_Gfx[] = INCBIN_U32("graphics/interface/scroll_indicator.4bpp.lz");
-static const u32 sOutlineCursor_Gfx[]   = INCBIN_U32("graphics/interface/outline_cursor.4bpp.lz");
-static const u32 sArrowCursor_Gfx[]     = INCBIN_U32("graphics/interface/arrow_cursor.4bpp.lz");
+static const u32 sScrollIndicator_Gfx[] = INCBIN_U32("graphics/interface/scroll_indicator.4bpp.smol");
+static const u32 sOutlineCursor_Gfx[]   = INCBIN_U32("graphics/interface/outline_cursor.4bpp.smol");
+static const u32 sArrowCursor_Gfx[]     = INCBIN_U32("graphics/interface/arrow_cursor.4bpp.smol");
 
 // code
 static void ListMenuDummyTask(u8 taskId)
@@ -578,11 +577,14 @@ static void ListMenuPrint(struct ListMenu *list, const u8 *str, u8 x, u8 y)
     u8 colors[3];
     if (gListMenuOverride.enabled)
     {
+        u32 fontId = gListMenuOverride.fontId;
+        if (list->template.textNarrowWidth)
+            fontId = GetFontIdToFit(str, fontId, gListMenuOverride.lettersSpacing, list->template.textNarrowWidth);
         colors[0] = gListMenuOverride.fillValue;
         colors[1] = gListMenuOverride.cursorPal;
         colors[2] = gListMenuOverride.cursorShadowPal;
         AddTextPrinterParameterized4(list->template.windowId,
-                                     gListMenuOverride.fontId,
+                                     fontId,
                                      x, y,
                                      gListMenuOverride.lettersSpacing,
                                      0, colors, TEXT_SKIP_DRAW, str);
@@ -591,11 +593,14 @@ static void ListMenuPrint(struct ListMenu *list, const u8 *str, u8 x, u8 y)
     }
     else
     {
+        u32 fontId = list->template.fontId;
+        if (list->template.textNarrowWidth)
+            fontId = GetFontIdToFit(str, fontId, list->template.lettersSpacing, list->template.textNarrowWidth);
         colors[0] = list->template.fillValue;
         colors[1] = list->template.cursorPal;
         colors[2] = list->template.cursorShadowPal;
         AddTextPrinterParameterized4(list->template.windowId,
-                                     list->template.fontId,
+                                     fontId,
                                      x, y,
                                      list->template.lettersSpacing,
                                      0, colors, TEXT_SKIP_DRAW, str);
@@ -812,7 +817,7 @@ static void ListMenuScroll(struct ListMenu *list, u8 count, bool8 movingDown)
     }
 }
 
-static bool8 ListMenuChangeSelection(struct ListMenu *list, bool8 updateCursorAndCallCallback, u8 count, bool8 movingDown)
+bool8 ListMenuChangeSelectionFull(struct ListMenu *list, bool32 updateCursor, bool32 callCallback, u8 count, bool8 movingDown)
 {
     u16 oldSelectedRow;
     u8 selectionChange, i, cursorCount;
@@ -832,7 +837,7 @@ static bool8 ListMenuChangeSelection(struct ListMenu *list, bool8 updateCursorAn
         } while (list->template.items[list->scrollOffset + list->selectedRow].id == LIST_HEADER);
     }
 
-    if (updateCursorAndCallCallback)
+    if (updateCursor)
     {
         switch (selectionChange)
         {
@@ -842,7 +847,8 @@ static bool8 ListMenuChangeSelection(struct ListMenu *list, bool8 updateCursorAn
         case 1:
             ListMenuErasePrintedCursor(list, oldSelectedRow);
             ListMenuDrawCursor(list);
-            ListMenuCallSelectionChangedCallback(list, FALSE);
+            if (callCallback)
+                ListMenuCallSelectionChangedCallback(list, FALSE);
             CopyWindowToVram(list->template.windowId, COPYWIN_GFX);
             break;
         case 2:
@@ -850,13 +856,19 @@ static bool8 ListMenuChangeSelection(struct ListMenu *list, bool8 updateCursorAn
             ListMenuErasePrintedCursor(list, oldSelectedRow);
             ListMenuScroll(list, cursorCount, movingDown);
             ListMenuDrawCursor(list);
-            ListMenuCallSelectionChangedCallback(list, FALSE);
+            if (callCallback)
+                ListMenuCallSelectionChangedCallback(list, FALSE);
             CopyWindowToVram(list->template.windowId, COPYWIN_GFX);
             break;
         }
     }
 
     return FALSE;
+}
+
+bool8 ListMenuChangeSelection(struct ListMenu *list, bool8 updateCursorAndCallCallback, u8 count, bool8 movingDown)
+{
+    return ListMenuChangeSelectionFull(list, updateCursorAndCallCallback, updateCursorAndCallCallback, count, movingDown);
 }
 
 static void ListMenuCallSelectionChangedCallback(struct ListMenu *list, u8 onInit)

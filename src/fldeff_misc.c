@@ -544,7 +544,7 @@ static void AdjustSecretPowerSpritePixelOffsets(void)
     }
 }
 
-bool8 SetUpFieldMove_SecretPower(void)
+bool32 SetUpFieldMove_SecretPower(void)
 {
     u8 mb;
 
@@ -1024,7 +1024,7 @@ void DoSecretBaseGlitterMatSparkle(void)
     {
         gSprites[spriteId].coordOffsetEnabled = TRUE;
         gSprites[spriteId].oam.priority = 1;
-        gSprites[spriteId].oam.paletteNum = 5;
+        UpdateSpritePaletteByTemplate(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SPARKLE], &gSprites[spriteId]);
         gSprites[spriteId].callback = SpriteCB_GlitterMatSparkle;
         gSprites[spriteId].data[0] = 0;
     }

@@ -131,11 +131,11 @@ static const struct BgTemplate sBgTemplates[4] = {
     },
 };
 
-static const u16 sGround_Tilemap[] = INCBIN_U16("graphics/cable_car/ground.bin.lz");
-static const u16 sTrees_Tilemap[] = INCBIN_U16("graphics/cable_car/trees.bin.lz");
-static const u16 sBgMountains_Tilemap[] = INCBIN_U16("graphics/cable_car/bg_mountains.bin.lz");
+static const u16 sGround_Tilemap[] = INCBIN_U16("graphics/cable_car/ground.bin.smolTM");
+static const u16 sTrees_Tilemap[] = INCBIN_U16("graphics/cable_car/trees.bin.smolTM");
+static const u16 sBgMountains_Tilemap[] = INCBIN_U16("graphics/cable_car/bg_mountains.bin.smolTM");
 static const u16 sPylonTop_Tilemap[] = INCBIN_U16("graphics/cable_car/pylon_top.bin");
-static const u16 sPylonPole_Tilemap[] = INCBIN_U16("graphics/cable_car/pylon_pole.bin.lz");
+static const u16 sPylonPole_Tilemap[] = INCBIN_U16("graphics/cable_car/pylon_pole.bin.smolTM");
 
 static const struct CompressedSpriteSheet sSpriteSheets[] = {
     { gCableCar_Gfx,      0x800, TAG_CABLE_CAR },
@@ -790,12 +790,12 @@ static void CreateCableCarSprites(void)
     u8 spriteId;
     u8 i;
 
-    u8 playerGraphicsIds[2] = {
+    u16 playerGraphicsIds[2] = {
         [MALE]   = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL,
         [FEMALE] = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
     };
     u16 rval = Random();
-    u8 hikerGraphicsIds[4] = {
+    u16 hikerGraphicsIds[4] = {
         OBJ_EVENT_GFX_HIKER,
         OBJ_EVENT_GFX_CAMPER,
         OBJ_EVENT_GFX_PICNICKER,
@@ -1062,4 +1062,3 @@ static void InitGroundTilemapData(bool8 goingDown)
 
     sCableCar->groundTimer = 0;
 }
-

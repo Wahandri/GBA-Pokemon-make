@@ -94,7 +94,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [MOVE_VICE_GRIP] = {
+    [MOVE_VISE_GRIP] = {
         { .songId = PHONEME_ID(PH_PRICE_SOLO) },
         { .songId = PHONEME_ID(PH_KIT_SOLO) },
         PREV_BARD_SOUND,
@@ -159,14 +159,6 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
     },
     [MOVE_FLY] = {
-        { .songId = PHONEME_ID(PH_PRICE_BLEND) },
-        PREV_BARD_SOUND,
-        PREV_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_VIAJAR] = {
         { .songId = PHONEME_ID(PH_PRICE_BLEND) },
         PREV_BARD_SOUND,
         PREV_BARD_SOUND,
@@ -1102,7 +1094,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [MOVE_HI_JUMP_KICK] = {
+    [MOVE_HIGH_JUMP_KICK] = {
         { .songId = PHONEME_ID(PH_PRICE_BLEND) },
         { .songId = PHONEME_ID(PH_STRUT_SOLO) },
         { .songId = PHONEME_ID(PH_KIT_SOLO) },
@@ -1494,7 +1486,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [MOVE_FAINT_ATTACK] = {
+    [MOVE_FEINT_ATTACK] = {
         { .songId = PHONEME_ID(PH_FACE_BLEND) },
         { .songId = PHONEME_ID(PH_STRUT_BLEND) },
         { .songId = PHONEME_ID(PH_TRAP_BLEND) },
@@ -2134,7 +2126,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [MOVE_SMELLING_SALT] = {
+    [MOVE_SMELLING_SALTS] = {
         { .songId = PHONEME_ID(PH_DRESS_BLEND) },
         { .songId = PHONEME_ID(PH_FLEECE_BLEND) },
         { .songId = PHONEME_ID(PH_THOUGHT_BLEND) },
@@ -2851,78 +2843,6 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         { .songId = PHONEME_ID(PH_KIT_BLEND) },
         PREV_BARD_SOUND,
         { .songId = PHONEME_ID(PH_GOOSE_BLEND) },
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_FIRE_FANG] = {
-        { .songId = PHONEME_ID(PH_PRICE_BLEND) },
-        { .songId = PHONEME_ID(PH_NURSE_BLEND) },
-        { .songId = PHONEME_ID(PH_STRUT_BLEND) },
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_THUNDER_FANG] = {
-        { .songId = PHONEME_ID(PH_STRUT_BLEND) },
-        { .songId = PHONEME_ID(PH_NURSE_BLEND) },
-        { .songId = PHONEME_ID(PH_STRUT_SOLO) },
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_FLARE_BLITZ] = {
-        { .songId = PHONEME_ID(PH_GOAT_BLEND) },
-        PREV_BARD_SOUND,
-        PREV_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_WILD_CHARGE] = {
-        { .songId = PHONEME_ID(PH_THOUGHT_BLEND) },
-        PREV_BARD_SOUND,
-        PREV_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_ENERGY_BALL] = {
-        { .songId = PHONEME_ID(PH_GOAT_BLEND) },
-        { .songId = PHONEME_ID(PH_NURSE_BLEND) },
-        { .songId = PHONEME_ID(PH_FLEECE_BLEND) },
-        PREV_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_VOLT_SWITCH] = {
-        { .songId = PHONEME_ID(PH_STRUT_BLEND) },
-        { .songId = PHONEME_ID(PH_NURSE_BLEND) },
-        { .songId = PHONEME_ID(PH_GOAT_SOLO) },
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_FIERY_DANCE] = {
-        { .songId = PHONEME_ID(PH_GOAT_BLEND) },
-        PREV_BARD_SOUND,
-        PREV_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_LAVA_ROAR] = {
-        { .songId = PHONEME_ID(PH_TRAP_BLEND) },
-        { .songId = PHONEME_ID(PH_GOAT_SOLO) },
-        { .songId = PHONEME_ID(PH_NURSE_BLEND) },
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-        NULL_BARD_SOUND,
-    },
-    [MOVE_SOLAR_ECHO] = {
-        { .songId = PHONEME_ID(PH_GOAT_BLEND) },
-        { .songId = PHONEME_ID(PH_NURSE_BLEND) },
-        { .songId = PHONEME_ID(PH_FLEECE_BLEND) },
-        PREV_BARD_SOUND,
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     }

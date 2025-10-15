@@ -9,7 +9,7 @@
            CPU_SET_##bit##BIT | CPU_SET_SRC_FIXED | ((size)/(bit/8) & 0x1FFFFF)); \
 }
 
-#if MODERN && (__STDC_VERSION__ >= 201112L)
+#if MODERN
 #define CPU_FILL(value, dest, size, bit) \
     do \
     { \
@@ -25,7 +25,7 @@
 
 #define CPU_COPY_UNCHECKED(src, dest, size, bit) CpuSet(src, dest, CPU_SET_##bit##BIT | ((size)/(bit/8) & 0x1FFFFF))
 
-#if MODERN && (__STDC_VERSION__ >= 201112L)
+#if MODERN
 #define CPU_COPY(src, dest, size, bit) \
     do \
     { \
@@ -40,6 +40,24 @@
 #define CpuCopy16(src, dest, size) CPU_COPY(src, dest, size, 16)
 #define CpuCopy32(src, dest, size) CPU_COPY(src, dest, size, 32)
 
+#define CpuSmartCopy16(src, dest, size) \
+{ \
+    if ((((size) & 0x1f) == 0) && ((((u32)(src)) & 3) == 0) && ((((u32)(dest)) & 3) == 0)) { \
+        CpuFastCopy((src), (dest), (size)); \
+    } else { \
+        CpuCopy16((src), (dest), (size)); \
+    } \
+}
+
+#define CpuSmartCopy32(src, dest, size) \
+{ \
+    if ((((size) & 0x1f) == 0) && ((((u32)(src)) & 3) == 0) && ((((u32)(dest)) & 3) == 0)) { \
+        CpuFastCopy((src), (dest), (size)); \
+    } else { \
+        CpuCopy32((src), (dest), (size)); \
+    } \
+}
+
 #define CpuFastFill(value, dest, size)                               \
 {                                                                    \
     vu32 tmp = (vu32)(value);                                        \
@@ -52,6 +70,24 @@
 
 #define CpuFastFill8(value, dest, size) CpuFastFill(((value) << 24) | ((value) << 16) | ((value) << 8) | (value), (dest), (size))
 
+#define CpuSmartFill(value, dest, size) \
+{ \
+    if ((((size) & 0x1f) == 0) && ((((u32)(dest)) & 3) == 0)) { \
+        CpuFastFill((value), (dest), (size)); \
+    } else { \
+        CpuFill32((value), (dest), (size)); \
+    } \
+}
+
+#define CpuSmartFill16(value, dest, size) \
+{ \
+    if ((((size) & 0x1f) == 0) && ((((u32)(dest)) & 3) == 0)) { \
+        CpuFastFill16((value), (dest), (size)); \
+    } else { \
+        CpuFill16((value), (dest), (size)); \
+    } \
+}
+
 #define CpuFastCopy(src, dest, size) CpuFastSet(src, dest, ((size)/(32/8) & 0x1FFFFF))
 
 #define DmaSetUnchecked(dmaNum, src, dest, control) \
@@ -63,7 +99,7 @@
     dmaRegs[2];                                   \
 }
 
-#if MODERN && (__STDC_VERSION__ >= 201112L)
+#if MODERN
 // NOTE: Assumes 16-bit DMAs.
 #define DmaSet(dmaNum, src, dest, control) \
     do \
@@ -87,7 +123,7 @@
          | ((size)/(bit/8)));                                                                 \
 }
 
-#if MODERN && (__STDC_VERSION__ >= 201112L)
+#if MODERN
 #define DMA_FILL(dmaNum, value, dest, size, bit) \
     do \
     { \
@@ -113,7 +149,7 @@
     DmaFill##bit(dmaNum, 0, _dest, _size);  \
 }
 
-#if MODERN && (__STDC_VERSION__ >= 201112L)
+#if MODERN
 #define DMA_CLEAR(dmaNum, dest, size, bit) \
     do \
     { \
@@ -134,7 +170,7 @@
            (DMA_ENABLE | DMA_START_NOW | DMA_##bit##BIT | DMA_SRC_INC | DMA_DEST_INC) << 16 \
          | ((size)/(bit/8)))
 
-#if MODERN && (__STDC_VERSION__ >= 201112L)
+#if MODERN
 #define DMA_COPY(dmaNum, src, dest, size, bit) \
     do \
     { \
