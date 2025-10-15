@@ -247,10 +247,10 @@ Route101_Text_HelpMe:
 	.string "¡Socorro! ¡Ayuda!$"
 
 Route101_Text_PleaseHelp:
-	.string "¡Oye! ¡Sí, tú!\n"
-	.string "¡Ayúdame, por favor!\p"
-	.string "¡En mi MOCHILA hay POKé BALLS!\n"
-	.string "¡Usa una!$"
+        .string "¡Oye! ¡Sí, tú!\n"
+        .string "¡Ayúdame, por favor!\p"
+        .string "¡En mi MOCHILA hay una POKé BALL!\n"
+        .string "¡Rápido, tómala y ayúdame!$"
 
 Route101_Text_DontLeaveMe:
 	.string "Pe-pero… ¡¿adónde vas?!\n"
