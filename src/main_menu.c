@@ -1635,15 +1635,7 @@ static void Task_NewGameBirchSpeech_SetAutomaticName(u8 taskId)
 {
     NewGameBirchSpeech_SetPlayerNameByGender();
     NewGameBirchSpeech_ShowDialogueWindow(0, 1);
-    Task_NewGameBirchSpeech_SoItsPlayerName(taskId);
-}
-
-static void Task_NewGameBirchSpeech_SoItsPlayerName(u8 taskId)
-{
-    NewGameBirchSpeech_ClearWindow(0);
-    StringExpandPlaceholders(gStringVar4, gText_Birch_SoItsPlayer);
-    AddTextPrinterForMessage(TRUE);
-    gTasks[taskId].func = Task_NewGameBirchSpeech_CreateNameYesNo;
+    Task_NewGameBirchSpeech_WhatsYourName(taskId);
 }
 
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8 taskId)
@@ -2339,7 +2331,10 @@ static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox(u8 taskId)
     if (gTasks[taskId].tTimer-- <= 0)
     {
         NewGameBirchSpeech_ShowDialogueWindow(0, 1);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_SoItsPlayerName;
+        NewGameBirchSpeech_ClearWindow(0);
+        StringExpandPlaceholders(gStringVar4, gText_Birch_SoItsPlayer);
+        AddTextPrinterForMessage(TRUE);
+        gTasks[taskId].func = Task_NewGameBirchSpeech_CreateNameYesNo;
     }
 }
 
