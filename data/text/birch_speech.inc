@@ -34,7 +34,7 @@ gText_Birch_AndYouAre::
 	.string "¿Tú quién eres?$"
 
 gText_Birch_BoyOrGirl::
-	.string "¿Eres un chico o una chica?$"
+        .string "¿Eres Wahandri o Fran?$"
 
 gText_Birch_WhatsYourName::
 	.string "Muy bien.\n"
