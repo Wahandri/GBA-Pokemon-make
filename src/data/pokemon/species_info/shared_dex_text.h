@@ -287,3 +287,13 @@ const u8 gOgerponCornerstoneMaskPokedexText[] = _(
     "of stone. Its body is rock-solid,\n"
     "protecting it from all manner of\n"
     "attacks.");
+
+const u8 gGordaPokedexText[] = _(
+    "Aunque pequeña, Gorda nunca se rinde.\n"
+    "Tiene un corazón ardiente y defiende su hogar\n"
+    "con una valentía desproporcionada a su tamaño.");
+
+const u8 gCharlyPokedexText[] = _(
+    "Charly siempre está lleno de energía.\n"
+    "Su pelaje genera pequeñas chispas y puede\n"
+    "absorber rayos de tormentas eléctricas.");
