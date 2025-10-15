@@ -341,9 +341,18 @@ PlayersHouse_1F_Text_TakeCareHoney:
 	.string "MAMÁ: ¡Cuídate, cielo!$"
 
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
-	.string "MAMÁ: ¡Mira por dónde! ¿Tu padre\n"
-	.string "te ha dado esa MEDALLA?\p"
-	.string "¡Pues yo también quiero darte algo!$"
+        .string "MAMÁ: ¡Mira por dónde! ¿Tu padre\n"
+        .string "te ha dado esa MEDALLA?\p"
+        .string "¡Pues yo también quiero darte algo!$"
+
+gText_MomGiveViajar::
+        .string "¡Hijo! Antes de que te vayas…\p"
+        .string "Toma esto, es una MO llamada Viajar.\p"
+        .string "Con ella podrás moverte rápidamente por el mundo.\p"
+
+gText_MomExplainViajar::
+        .string "Recuerda usarla con responsabilidad.\p"
+        .string "¡Te quiero mucho, y cuídate en tus viajes!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
 	.string "No te esfuerces demasiado, cielo.\n"

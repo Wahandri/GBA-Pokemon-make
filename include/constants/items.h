@@ -821,6 +821,7 @@
 
 #define ITEM_HM01 682
 #define ITEM_HM02 683
+#define ITEM_HM_VIAJAR ITEM_HM02
 #define ITEM_HM03 684
 #define ITEM_HM04 685
 #define ITEM_HM05 686

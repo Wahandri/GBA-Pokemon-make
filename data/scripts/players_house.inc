@@ -299,17 +299,42 @@ PlayersHouse_1F_Movement_MomReturnToSeatFemale:
 	step_end
 
 PlayersHouse_1F_EventScript_Mom::
-	lock
-	faceplayer
-	goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_MAY, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
-	goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
-	goto_if_set FLAG_HAS_MATCH_CALL, PlayersHouse_1F_EventScript_TryRegisterMom
-	goto_if_set FLAG_RESCUED_BIRCH, PlayersHouse_1F_EventScript_MomHealsParty
-	goto_if_eq VAR_TEMP_1, 1, PlayersHouse_1F_EventScript_SeeYouHoney
-	goto_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, PlayersHouse_1F_EventScript_DidYouMeetProfBirch
-	msgbox PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT
-	release
-	end
+        lock
+        faceplayer
+        call PlayersHouse_1F_EventScript_MomGiveViajar
+        goto_if_eq VAR_RESULT, TRUE, PlayersHouse_1F_EventScript_Mom_End
+        goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_MAY, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
+        goto_if_eq VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 4, PlayersHouse_1F_EventScript_DontPushYourselfTooHard
+        goto_if_set FLAG_HAS_MATCH_CALL, PlayersHouse_1F_EventScript_TryRegisterMom
+        goto_if_set FLAG_RESCUED_BIRCH, PlayersHouse_1F_EventScript_MomHealsParty
+        goto_if_eq VAR_TEMP_1, 1, PlayersHouse_1F_EventScript_SeeYouHoney
+        goto_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, PlayersHouse_1F_EventScript_DidYouMeetProfBirch
+        msgbox PlayersHouse_1F_Text_IsntItNiceInHere, MSGBOX_DEFAULT
+PlayersHouse_1F_EventScript_Mom_End::
+        release
+        end
+
+PlayersHouse_1F_EventScript_MomGiveViajar::
+        checkflag FLAG_RECEIVED_POKEDEX
+        goto_if FALSE, PlayersHouse_1F_EventScript_MomGiveViajar_ReturnFalse
+        checkflag FLAG_GOT_HM_VIAJAR
+        goto_if TRUE, PlayersHouse_1F_EventScript_MomGiveViajar_ReturnFalse
+        msgbox gText_MomGiveViajar, MSGBOX_DEFAULT
+        giveitem ITEM_HM_VIAJAR
+        goto_if_eq VAR_RESULT, FALSE, PlayersHouse_1F_EventScript_MomGiveViajar_BagFull
+        setflag FLAG_GOT_HM_VIAJAR
+        msgbox gText_MomExplainViajar, MSGBOX_DEFAULT
+        setvar VAR_RESULT, TRUE
+        return
+
+PlayersHouse_1F_EventScript_MomGiveViajar_BagFull::
+        call Common_EventScript_ShowBagIsFull
+        setvar VAR_RESULT, TRUE
+        return
+
+PlayersHouse_1F_EventScript_MomGiveViajar_ReturnFalse::
+        setvar VAR_RESULT, FALSE
+        return
 
 PlayersHouse_1F_EventScript_DontPushYourselfTooHard::
 	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT

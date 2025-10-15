@@ -25,6 +25,7 @@
 #define MOVE_WING_ATTACK 17
 #define MOVE_WHIRLWIND 18
 #define MOVE_FLY 19
+#define MOVE_VIAJAR MOVE_FLY
 #define MOVE_BIND 20
 #define MOVE_SLAM 21
 #define MOVE_VINE_WHIP 22
