@@ -225,6 +225,7 @@ static void Task_NewGameBirchSpeech_WaitForWhatsYourNameToPrint(u8);
 static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoice(u8);
 static void Task_NewGameBirchSpeech_StartNamingScreen(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
+static void Task_NewGameBirchSpeech_SetAutomaticName(u8);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
 void CreateYesNoMenuParameterized(u8, u8, u16, u16, u8, u8);
@@ -244,6 +245,7 @@ static void MainMenu_FormatSavegamePokedex(void);
 static void MainMenu_FormatSavegameTime(void);
 static void MainMenu_FormatSavegameBadges(void);
 static void NewGameBirchSpeech_CreateDialogueWindowBorder(u8, u8, u8, u8, u8, u8);
+static void NewGameBirchSpeech_SetPlayerNameByGender(void);
 
 // .rodata
 
@@ -473,9 +475,12 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 };
 
 static const struct MenuAction sMenuActions_Gender[] = {
-    {COMPOUND_STRING("BOY"), {NULL}},
-    {COMPOUND_STRING("GIRL"), {NULL}}
+    {COMPOUND_STRING("WAHANDRI"), {NULL}},
+    {COMPOUND_STRING("FRAN"), {NULL}}
 };
+
+static const u8 sPlayerName_Wahandri[] = _("Wahandri");
+static const u8 sPlayerName_Fran[] = _("Fran");
 
 static const u8 *const sMalePresetNames[] = {
     COMPOUND_STRING("STU"),
@@ -1529,13 +1534,13 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->playerGender = gender;
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            gTasks[taskId].func = Task_NewGameBirchSpeech_SetAutomaticName;
             break;
         case FEMALE:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->playerGender = gender;
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            gTasks[taskId].func = Task_NewGameBirchSpeech_SetAutomaticName;
             break;
     }
     gender2 = Menu_GetCursorPos();
@@ -1624,6 +1629,13 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8 taskId)
         DestroyTask(taskId);
         DoNamingScreen(NAMING_SCREEN_PLAYER, gSaveBlock2Ptr->playerName, gSaveBlock2Ptr->playerGender, 0, 0, CB2_NewGameBirchSpeech_ReturnFromNamingScreen);
     }
+}
+
+static void Task_NewGameBirchSpeech_SetAutomaticName(u8 taskId)
+{
+    NewGameBirchSpeech_SetPlayerNameByGender();
+    NewGameBirchSpeech_ShowDialogueWindow(0, 1);
+    Task_NewGameBirchSpeech_SoItsPlayerName(taskId);
 }
 
 static void Task_NewGameBirchSpeech_SoItsPlayerName(u8 taskId)
@@ -2135,6 +2147,14 @@ void NewGameBirchSpeech_SetDefaultPlayerName(u8 nameId)
     for (i = 0; i < PLAYER_NAME_LENGTH; i++)
         gSaveBlock2Ptr->playerName[i] = name[i];
     gSaveBlock2Ptr->playerName[PLAYER_NAME_LENGTH] = EOS;
+}
+
+static void NewGameBirchSpeech_SetPlayerNameByGender(void)
+{
+    if (gSaveBlock2Ptr->playerGender == MALE)
+        StringCopy(gSaveBlock2Ptr->playerName, sPlayerName_Wahandri);
+    else
+        StringCopy(gSaveBlock2Ptr->playerName, sPlayerName_Fran);
 }
 
 static void CreateMainMenuErrorWindow(const u8 *str)
