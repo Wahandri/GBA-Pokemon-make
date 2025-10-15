@@ -290,7 +290,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 0, SHADOW_SIZE_M)
         FOOTPRINT(Gorda)
-        .levelUpLearnset = sNoneLevelUpLearnset,
+        .levelUpLearnset = sGordaLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
@@ -341,7 +341,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 0, SHADOW_SIZE_M)
         FOOTPRINT(Charly)
-        .levelUpLearnset = sNoneLevelUpLearnset,
+        .levelUpLearnset = sCharlyLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
