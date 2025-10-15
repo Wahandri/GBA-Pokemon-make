@@ -287,7 +287,7 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "AURA: Veamos… En la RUTA 103 puedes\n"
+	.string "Fran: Veamos… En la RUTA 103 puedes\n"
 	.string "encontrar POKéMON como…$"
 
 Route103_Text_MayLetsBattle:
@@ -304,7 +304,7 @@ Route103_Text_MayDefeated:
 	.string "¡{PLAYER}{KUN}, se te da bien!$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "AURA: Creo que ya entiendo por qué\n"
+	.string "Fran: Creo que ya entiendo por qué\n"
 	.string "mi padre te tiene tanto aprecio.\p"
 	.string "Por ejemplo, ese POKéMON que acabas\n"
 	.string "de recibir ya te quiere un montón.\p"
@@ -313,7 +313,7 @@ Route103_Text_MayTimeToHeadBack:
 	.string "Bien, volvamos al LABORATORIO.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "BRUNO: Bien, pues entonces es éste\n"
+	.string "Wahandri: Bien, pues entonces es éste\n"
 	.string "de aquí y el que vive en la RUTA 103…$"
 
 Route103_Text_BrendanLetsBattle:
@@ -330,7 +330,7 @@ Route103_Text_BrendanDefeated:
 	.string "una nulidad, precisamente…$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "BRUNO: Sí, ya lo pillo.\n"
+	.string "Wahandri: Sí, ya lo pillo.\n"
 	.string "Creo que ya entiendo por qué\l"
 	.string "mi padre te tiene tanto aprecio.\p"
 	.string "Porque, ¿ves?, ese POKéMON que acabas\n"

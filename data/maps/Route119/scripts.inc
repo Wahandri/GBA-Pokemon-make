@@ -476,7 +476,7 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "AURA: ¡{PLAYER}{KUN}!\n"
+	.string "Fran: ¡{PLAYER}{KUN}!\n"
 	.string "¿Dónde estabas? ¡Te estaba buscando!\p"
 	.string "¿Has mejorado mucho?\n"
 	.string "Vamos a comprobarlo…\p"
@@ -490,12 +490,12 @@ Route119_Text_MayDefeat:
 	.string "no entrenabas bastante…$"
 
 Route119_Text_MayPresentForYou:
-	.string "AURA: ¡Pero está claro que no tenía\n"
+	.string "Fran: ¡Pero está claro que no tenía\n"
 	.string "ningún motivo para preocuparme!\p"
 	.string "¡Sigue así! ¡Y toma este regalo para ti!$"
 
 Route119_Text_MayExplainFly:
-	.string "AURA: Usa VUELO y tus POKéMON te\n"
+	.string "Fran: Usa VUELO y tus POKéMON te\n"
 	.string "llevarán al instante a cualquier ciudad\l"
 	.string "o pueblo que ya hayas visitado.\p"
 	.string "Pero, para usar VUELO, necesitas la\n"
@@ -508,7 +508,7 @@ Route119_Text_MayExplainFly:
 	.string "Bueno, ¡hasta la próxima!$"
 
 Route119_Text_BrendanIntro:
-	.string "BRUNO: ¡{PLAYER}! ¿Así que andabas\n"
+	.string "Wahandri: ¡{PLAYER}! ¿Así que andabas\n"
 	.string "buscando POKéMON por aquí?\p"
 	.string "A ver cuánto has mejorado.\n"
 	.string "¡Te voy a poner a prueba!\p"
@@ -520,13 +520,13 @@ Route119_Text_BrendanDefeat:
 	.string "Has avanzado un buen trecho, sí…$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "BRUNO: Diría que tienes nivel como\n"
+	.string "Wahandri: Diría que tienes nivel como\n"
 	.string "para buscar POKéMON donde quieras.\p"
 	.string "Mira, toma esto.\n"
 	.string "¡Úsala!$"
 
 Route119_Text_BrendanExplainFly:
-	.string "BRUNO: Usa VUELO y tus POKéMON\n"
+	.string "Wahandri: Usa VUELO y tus POKéMON\n"
 	.string "te llevarán al instante a cualquier\l"
 	.string "ciudad o pueblo que ya hayas visitado.\p"
 	.string "Pero para eso necesitas la MEDALLA\n"

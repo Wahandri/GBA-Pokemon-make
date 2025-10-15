@@ -1077,7 +1077,7 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "arriba del todo. ¡Alinea bien tu equipo!$"
 
 Route104_Text_MayWeShouldRegister:
-	.string "AURA: ¡Oh, hola, {PLAYER}{KUN}!\p"
+	.string "Fran: ¡Oh, hola, {PLAYER}{KUN}!\p"
 	.string "DEVON ha activado la AGENDA\n"
 	.string "del MÓVIL de tu POKéNAV, ¿verdad?\p"
 	.string "¡Deberíamos registrarnos para seguir\n"
@@ -1085,10 +1085,10 @@ Route104_Text_MayWeShouldRegister:
 
 Route104_Text_RegisteredMay:
 	.string "{PLAYER} ha registrado a\n"
-	.string "AURA en el POKéNAV.$"
+	.string "Fran en el POKéNAV.$"
 
 Route104_Text_MayHowsYourPokedex:
-	.string "AURA: Por cierto, {PLAYER}{KUN},\n"
+	.string "Fran: Por cierto, {PLAYER}{KUN},\n"
 	.string "¿cómo llevas la POKéDEX?$"
 
 Route104_Text_MayMinesDecentLetsBattle:
@@ -1097,7 +1097,7 @@ Route104_Text_MayMinesDecentLetsBattle:
 	.string "¿nos echamos un combate?$"
 
 Route104_Text_MayHaventRaisedPokemon:
-	.string "AURA: ¡Pero bueno! ¿Acaso no\n"
+	.string "Fran: ¡Pero bueno! ¿Acaso no\n"
 	.string "has estado entrenando tus POKéMON?\p"
 	.string "¿No has atrapado nuevos POKéMON?\n"
 	.string "¿No has estado criando los que tienes?\p"
@@ -1105,11 +1105,11 @@ Route104_Text_MayHaventRaisedPokemon:
 	.string "debería hacerlo…$"
 
 Route104_Text_MayLetsBattle:
-	.string "AURA: Bueno, ¿qué te parece?\n"
+	.string "Fran: Bueno, ¿qué te parece?\n"
 	.string "¿Nos echamos un combate?$"
 
 Route104_Text_MayIntro:
-	.string "AURA: No tienes mucha experiencia,\n"
+	.string "Fran: No tienes mucha experiencia,\n"
 	.string "{PLAYER}{KUN}. ¡No puedo perder!$"
 
 Route104_Text_MayDefeat:
@@ -1117,7 +1117,7 @@ Route104_Text_MayDefeat:
 	.string "¡Eres mejor de lo que esperaba!$"
 
 Route104_Text_MayPostBattle:
-	.string "AURA: Se ve a la legua que has mejorado\n"
+	.string "Fran: Se ve a la legua que has mejorado\n"
 	.string "mucho en los combates POKéMON.\p"
 	.string "Pero, además de hacerles luchar,\n"
 	.string "tendrías que hacer como el SR. ARENQUE.\p"
@@ -1125,7 +1125,7 @@ Route104_Text_MayPostBattle:
 	.string "amistad con tus POKéMON.$"
 
 Route104_Text_BrendanWeShouldRegister:
-	.string "BRUNO: ¡Eh, hola, {PLAYER}!\p"
+	.string "Wahandri: ¡Eh, hola, {PLAYER}!\p"
 	.string "¡DEVON ha activado la AGENDA\n"
 	.string "del MÓVIL de tu POKéNAV! ¡Genial!\p"
 	.string "¡Vamos a registrarnos para estar\n"
@@ -1133,10 +1133,10 @@ Route104_Text_BrendanWeShouldRegister:
 
 Route104_Text_RegisteredBrendan:
 	.string "{PLAYER} ha registrado a\n"
-	.string "BRUNO en el POKéNAV.$"
+	.string "Wahandri en el POKéNAV.$"
 
 Route104_Text_BrendanHowsYourPokedex:
-	.string "BRUNO: {PLAYER}, ¿cómo está tu POKéDEX?\n"
+	.string "Wahandri: {PLAYER}, ¿cómo está tu POKéDEX?\n"
 	.string "¿Has completado alguna página?$"
 
 Route104_Text_BrendanDoingGreatLetsBattle:
@@ -1145,15 +1145,15 @@ Route104_Text_BrendanDoingGreatLetsBattle:
 	.string "para ver cuánto he mejorado?$"
 
 Route104_Text_BrendanNoConfidence:
-	.string "BRUNO: ¿Qué problema hay?\n"
+	.string "Wahandri: ¿Qué problema hay?\n"
 	.string "¿No confías en tus POKéMON?$"
 
 Route104_Text_BrendanLetsBattle:
-	.string "BRUNO: ¿Qué pasa?\n"
+	.string "Wahandri: ¿Qué pasa?\n"
 	.string "¿Quieres luchar conmigo?$"
 
 Route104_Text_BrendanIntro:
-	.string "BRUNO: Sé que acabas de empezar\n"
+	.string "Wahandri: Sé que acabas de empezar\n"
 	.string "a entrenar POKéMON, pero\l"
 	.string "no te lo pondré fácil.$"
 
@@ -1162,7 +1162,7 @@ Route104_Text_BrendanDefeat:
 	.string "No se te da nada mal.$"
 
 Route104_Text_BrendanPostBattle:
-	.string "BRUNO: Has mejorado bastante\n"
+	.string "Wahandri: Has mejorado bastante\n"
 	.string "en los combates POKéMON.\p"
 	.string "Pero ¿sabes?, no deberías limitarte\n"
 	.string "a hacer luchar a los POKéMON.\p"

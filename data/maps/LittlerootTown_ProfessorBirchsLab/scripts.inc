@@ -758,13 +758,13 @@ LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 	.string "¡Y a mí me espera mi trabajo de campo!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
-	.string "AURA: ¡Ahí va, {PLAYER}{KUN}!\n"
+	.string "Fran: ¡Ahí va, {PLAYER}{KUN}!\n"
 	.string "¡Ahora tú también tienes una POKéDEX!\p"
 	.string "¡Qué guay! ¡Como la mía!\n"
 	.string "¡Yo también tengo algo para ti!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
-	.string "AURA: ¡Es divertidísimo atrapar\n"
+	.string "Fran: ¡Es divertidísimo atrapar\n"
 	.string "un montón de POKéMON!\p"
 	.string "Voy a rebuscar por todas partes\n"
 	.string "porque quiero uno de cada.\p"
@@ -775,17 +775,17 @@ LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
 	.string "Oh… La MOCHILA está llena.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
-	.string "AURA: ¿Adónde puedo ir a buscar\n"
+	.string "Fran: ¿Adónde puedo ir a buscar\n"
 	.string "más POKéMON?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
-	.string "BRUNO: Mmmm…\n"
+	.string "Wahandri: Mmmm…\n"
 	.string "Ahora tú también tienes una POKéDEX…\p"
 	.string "Bueno, pues entonces supongo\n"
 	.string "que puedo darte esto.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
-	.string "BRUNO: Mola mucho más tener\n"
+	.string "Wahandri: Mola mucho más tener\n"
 	.string "montones de POKéMON.\p"
 	.string "Voy a explorar cada rincón para\n"
 	.string "encontrar distintos tipos de POKéMON.\p"
@@ -796,7 +796,7 @@ LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
 	.string "Eh, la MOCHILA está llena.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:
-	.string "BRUNO: Adónde puedo ir a buscar\n"
+	.string "Wahandri: Adónde puedo ir a buscar\n"
 	.string "más POKéMON, me pregunto…$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
@@ -830,14 +830,14 @@ LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "Dejadme ver esas POKéDEX.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
-	.string "AURA: ¡Guau!\p"
+	.string "Fran: ¡Guau!\p"
 	.string "¡Fenomenal!\n"
 	.string "¡También actualizan mi POKéDEX!\p"
 	.string "¡Y ha sido por todos esos POKéMON\n"
 	.string "que has atrapado tú, {PLAYER}{KUN}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "BRUNO: Me he recorrido todo HOENN\n"
+	.string "Wahandri: Me he recorrido todo HOENN\n"
 	.string "para encontrar todos esos POKéMON.\p"
 	.string "¡Ya me puedes dar las gracias por tener\n"
 	.string "la POKéDEX del MODO NACIONAL!\p"
@@ -859,13 +859,13 @@ LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "de hierba alta esperándote!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork:
-	.string "AURA: Creo que voy a descansar un poco\n"
+	.string "Fran: Creo que voy a descansar un poco\n"
 	.string "de tanto trabajo de campo.\p"
 	.string "Quiero ayudar un poco más al PROFESOR\n"
 	.string "en el LABORATORIO.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork:
-	.string "BRUNO: Creo que voy a descansar un poco\n"
+	.string "Wahandri: Creo que voy a descansar un poco\n"
 	.string "de tanto trabajo de campo.\p"
 	.string "Quiero ayudar más al PROFESOR aquí,\n"
 	.string "en el LABORATORIO.$"
@@ -945,7 +945,7 @@ LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
 	.string "this POKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
-	.string "AURA: {PLAYER}{KUN}, después de esto…\n"
+	.string "Fran: {PLAYER}{KUN}, después de esto…\n"
 	.string "¿Qué piensas hacer?\p"
 	.string "¿Vas a seguir combatiendo\n"
 	.string "para perfeccionar tu técnica?\p"
@@ -954,17 +954,17 @@ LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
 	.string "Yo me quedaré a ayudar al PROFESOR.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly:
-	.string "BRUNO: En vez de coleccionar\n"
+	.string "Wahandri: En vez de coleccionar\n"
 	.string "más POKéMON, prefiero centrarme\l"
 	.string "en entrenar bien al que he elegido.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:
-	.string "AURA: ¡Ah, hola, {PLAYER}{KUN}!\n"
+	.string "Fran: ¡Ah, hola, {PLAYER}{KUN}!\n"
 	.string "¿Has ido alguna vez a ese sitio?\l"
 	.string "¿Al FRENTE de BATALLA?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
-	.string "BRUNO: ¡Hola, {PLAYER}!\n"
+	.string "Wahandri: ¡Hola, {PLAYER}!\n"
 	.string "¿Has ido ya a ese sitio?\l"
 	.string "¿Al FRENTE de BATALLA?$"
 

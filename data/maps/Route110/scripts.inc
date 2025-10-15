@@ -755,7 +755,7 @@ Route110_Text_AquaActionsBringSmiles:
 	.string "feliz a la gente!$"
 
 Route110_Text_MayLetsBattle:
-	.string "AURA: ¡Hola, {PLAYER}{KUN}, cuánto tiempo!\p"
+	.string "Fran: ¡Hola, {PLAYER}{KUN}, cuánto tiempo!\p"
 	.string "Mientras buscaba otros POKéMON,\n"
 	.string "el que ya tenía ha mejorado mucho.\p"
 	.string "Así que…\n"
@@ -766,13 +766,13 @@ Route110_Text_MayDefeated:
 	.string "¡Eres mejor de lo que esperaba!$"
 
 Route110_Text_MayTakeThis:
-	.string "AURA: {PLAYER}{KUN}, has estado entrenando\n"
+	.string "Fran: {PLAYER}{KUN}, has estado entrenando\n"
 	.string "mucho, ¿a que sí?\p"
 	.string "Te mereces una recompensa.\n"
 	.string "¡Toma esto!$"
 
 Route110_Text_MayExplainItemfinder:
-	.string "AURA: Es un BUSCAOBJETOS.\p"
+	.string "Fran: Es un BUSCAOBJETOS.\p"
 	.string "Pruébalo. Cuando encuentra un objeto\n"
 	.string "invisible, emite un sonido.\p"
 	.string "Muy bien, {PLAYER}{KUN}, nos vemos.\p"
@@ -781,7 +781,7 @@ Route110_Text_MayExplainItemfinder:
 	.string "antes de nuestro próximo combate.$"
 
 Route110_Text_BrendanLetsBattle:
-	.string "BRUNO: Oye, {PLAYER}.\n"
+	.string "Wahandri: Oye, {PLAYER}.\n"
 	.string "Qué suerte, tú por aquí…\l"
 	.string "¿Cómo te va?\p"
 	.string "¿Has estado entrenando tus POKéMON?\n"
@@ -792,13 +792,13 @@ Route110_Text_BrendanDefeated:
 	.string "No se te da nada mal.$"
 
 Route110_Text_BrendanTakeThis:
-	.string "BRUNO: {PLAYER}, has estado\n"
+	.string "Wahandri: {PLAYER}, has estado\n"
 	.string "entrenando en secreto…\p"
 	.string "¡Da igual!\n"
 	.string "Toma esto…$"
 
 Route110_Text_BrendanExplainItemfinder:
-	.string "BRUNO: Esto es un BUSCAOBJETOS.\p"
+	.string "Wahandri: Esto es un BUSCAOBJETOS.\p"
 	.string "Úsalo para localizar objetos invisibles.\n"
 	.string "Si encuentra algo, emite un sonido.\p"
 	.string "Bueno, me voy a buscar más\n"
