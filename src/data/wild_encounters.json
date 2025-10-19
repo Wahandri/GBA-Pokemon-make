@@ -6608,7 +6608,7 @@
           }
         },
         {
-          "map": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
+          "map": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
           "base_label": "gCaveOfOrigin_UnusedRubySapphireMap1",
           "land_mons": {
             "encounter_rate": 4,
@@ -6677,7 +6677,7 @@
           }
         },
         {
-          "map": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
+          "map": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
           "base_label": "gCaveOfOrigin_UnusedRubySapphireMap2",
           "land_mons": {
             "encounter_rate": 4,
@@ -6746,7 +6746,7 @@
           }
         },
         {
-          "map": "MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3",
+          "map": "MAP_CAVE_OF_ORIGIN_ENTRANCE",
           "base_label": "gCaveOfOrigin_UnusedRubySapphireMap3",
           "land_mons": {
             "encounter_rate": 4,

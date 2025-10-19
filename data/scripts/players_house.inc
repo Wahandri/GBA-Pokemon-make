@@ -315,7 +315,7 @@ PlayersHouse_1F_EventScript_Mom_End::
         end
 
 PlayersHouse_1F_EventScript_MomGiveViajar::
-        checkflag FLAG_RECEIVED_POKEDEX
+        checkflag FLAG_SYS_POKEDEX_GET
         goto_if FALSE, PlayersHouse_1F_EventScript_MomGiveViajar_ReturnFalse
         checkflag FLAG_GOT_HM_VIAJAR
         goto_if TRUE, PlayersHouse_1F_EventScript_MomGiveViajar_ReturnFalse

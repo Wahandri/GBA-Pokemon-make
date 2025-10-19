@@ -4,16 +4,16 @@
 // --- GORDA ---
 extern const u32 gMonFrontPic_Gorda[];
 extern const u32 gMonBackPic_Gorda[];
-extern const u32 gMonPalette_Gorda[];
-extern const u32 gMonShinyPalette_Gorda[];
+extern const u16 gMonPalette_Gorda[];
+extern const u16 gMonShinyPalette_Gorda[];
 extern const u8  gMonIcon_Gorda[];
 extern const u8  gMonFootprint_Gorda[];
 
 // --- CHARLY ---
 extern const u32 gMonFrontPic_Charly[];
 extern const u32 gMonBackPic_Charly[];
-extern const u32 gMonPalette_Charly[];
-extern const u32 gMonShinyPalette_Charly[];
+extern const u16 gMonPalette_Charly[];
+extern const u16 gMonShinyPalette_Charly[];
 extern const u8  gMonIcon_Charly[];
 extern const u8  gMonFootprint_Charly[];
 
